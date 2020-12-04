@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #707070;
+  font-family: 'Prompt', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 1.9em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p, span, label {
+  font-size: 1em;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, select {
+  font-family: 'Prompt', sans-serif;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+button:focus, select:focus {
+  outline: none;
+}
+
+.form-component.button {
+  border: unset;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.form-component.input {
+  border: 1px solid #8B8B8B;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.form-component.select {
+  border: 1px solid #8B8B8B;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+header {
+  background: url(/img/bg-head.png);
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  height: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    -ms-grid-columns: 30% 70%;
+        grid-template-columns: 30% 70%;
+  }
+}
+
+.header .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: .5em;
+}
+
+.header .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header .right .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .right .menu li {
+  margin-right: 1em;
+}
+
+.header .right .other {
+  margin: 0 1em;
+}
+
+.header .right .other i {
+  cursor: pointer;
+}
+/*# sourceMappingURL=job.css.map */

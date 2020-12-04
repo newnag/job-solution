@@ -1,0 +1,112 @@
+@import 'variable';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: $white;
+  color: $dark-gray;
+  font-family: 'Prompt', sans-serif;
+  font-size: 16px;
+}
+
+h1{font-size: 1.9em;}
+h2{font-size: 1.8em;}
+h3{font-size: 1.6em;}
+h4{font-size: 1.4em;}
+h5{font-size: 1.2em;}
+h6{font-size: 1em;}
+
+p,span,label{
+  font-size: 1em;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button,select{
+  font-family: 'Prompt', sans-serif;
+  font-size: inherit;
+  cursor: pointer;
+
+  &:focus{
+    outline: none;
+  }
+}
+
+//---------------------------------------------------------------------
+// reuse class
+//---------------------------------------------------------------------
+.form-component{
+
+  &.button{
+    border: unset;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  &.input{
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+
+  &.select{
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+}
+
+
+//---------------------------------------------------------------------
+// normal class
+//---------------------------------------------------------------------
+header{
+  background: url(/img/bg-head.png);
+}
+
+.header{
+  display: grid;
+  height: 50px;
+
+  @media screen and (min-width:$ipadpro){
+    grid-template-columns: 30% 70%;
+  }
+
+  .left{
+    display: flex;
+    align-items: center;
+    padding-left: .5em;
+  }
+
+  .right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .menu{
+      display: flex;
+
+      li{
+        margin-right: 1em;
+      }
+    }
+
+    .other{
+      margin: 0 1em;
+
+      i{
+        cursor: pointer;
+      }
+    }
+  }
+}
