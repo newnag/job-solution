@@ -1,0 +1,97 @@
+@import 'variable';
+
+.company-normal{
+  max-width: 1364px;
+  margin: 3em auto;
+
+  .head-title{
+    text-align: center;
+    margin: 1em 0;
+
+    h2{
+      color: $blue;
+      font-size: 1.3em;
+    }
+  }
+
+  .logo-company{
+    position: relative;
+
+    .logo{
+      width: 10%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+    }
+
+    .company-name{
+      position: absolute;
+      left: 50%;
+      bottom: 10%;
+      transform: translateX(-50%);
+      width: 50%;
+      text-align: center;
+
+      h1{
+        color: $white;
+        font-size: 2.6em;
+        margin: 1em 0;
+      }
+      a{
+        color: $white;
+        margin: .5em 0;
+      }
+      p{
+        color: $white;
+        margin: .5em 0;
+      }
+      button{
+        color: $white;
+        background: inherit;
+        border: 1px solid $white;
+
+        &.active{
+          background: $white;
+          color: $black;
+        }
+      }
+    }
+
+    .bg{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .detail-company{
+    width: 60%;
+    margin: 3em auto;
+
+    .title{
+      text-align: center;
+      color: $blue;
+      position: relative;
+      margin-bottom: 1em;
+      padding: 0.5em 0;
+
+      &:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        border-bottom: 1px solid $blue;
+        width: 15em;
+        transform: translateX(-50%);
+      }
+    }
+
+    .ck{
+      padding: 1em 0;
+
+      p{
+        margin: .5em 0;
+      }
+    }
+  }
+}

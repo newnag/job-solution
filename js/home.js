@@ -9,9 +9,12 @@ function slide(){
     slidesPerGroup: 4,
     loop: true,
     loopFillGroupWithBlank: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+    autoplay: {
+      delay: 5000,
     },
   });
 }

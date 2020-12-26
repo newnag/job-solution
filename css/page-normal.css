@@ -1,0 +1,107 @@
+.company-normal {
+  max-width: 1364px;
+  margin: 3em auto;
+}
+
+.company-normal .head-title {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.company-normal .head-title h2 {
+  color: #1468B2;
+  font-size: 1.3em;
+}
+
+.company-normal .logo-company {
+  position: relative;
+}
+
+.company-normal .logo-company .logo {
+  width: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+}
+
+.company-normal .logo-company .company-name {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50%;
+  text-align: center;
+}
+
+.company-normal .logo-company .company-name h1 {
+  color: #fff;
+  font-size: 2.6em;
+  margin: 1em 0;
+}
+
+.company-normal .logo-company .company-name a {
+  color: #fff;
+  margin: .5em 0;
+}
+
+.company-normal .logo-company .company-name p {
+  color: #fff;
+  margin: .5em 0;
+}
+
+.company-normal .logo-company .company-name button {
+  color: #fff;
+  background: inherit;
+  border: 1px solid #fff;
+}
+
+.company-normal .logo-company .company-name button.active {
+  background: #fff;
+  color: #000;
+}
+
+.company-normal .logo-company .bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.company-normal .detail-company {
+  width: 60%;
+  margin: 3em auto;
+}
+
+.company-normal .detail-company .title {
+  text-align: center;
+  color: #1468B2;
+  position: relative;
+  margin-bottom: 1em;
+  padding: 0.5em 0;
+}
+
+.company-normal .detail-company .title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-bottom: 1px solid #1468B2;
+  width: 15em;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.company-normal .detail-company .ck {
+  padding: 1em 0;
+}
+
+.company-normal .detail-company .ck p {
+  margin: .5em 0;
+}
+/*# sourceMappingURL=page-normal.css.map */
