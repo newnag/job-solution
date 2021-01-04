@@ -125,6 +125,10 @@ header {
   color: #fff;
 }
 
+.header .left a img {
+  width: 160px;
+}
+
 .header .right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,9 +162,41 @@ header {
   margin: 0 1em;
 }
 
-.header .right .other i {
+.header .right .other > i {
   cursor: pointer;
   color: #fff;
+}
+
+.header .right .other > ul {
+  background: #001764;
+  color: #fff;
+  padding: .5em;
+  position: absolute;
+  top: -100em;
+  right: 0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 5;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header .right .other > ul li {
+  margin: .25em 0;
+}
+
+.header .right .other > ul li i {
+  width: 20px;
+}
+
+.header .right .other > ul.active {
+  top: 3em;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .header .right .lang {

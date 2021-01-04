@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <title>Job Solution</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,7 +17,7 @@
 <body>
   <header>
     <div class="header">
-      <div class="left"><a href="">JOB SOLUTION</a></div>
+      <div class="left"><a href=""><img src="/img/logo/Logowhite-07.svg" alt=""></a></div>
       <div class="right">
         <ul class="menu">
           <a href="">
@@ -38,12 +39,13 @@
         </ul>
         <div class="company"><button class="form-component button">สำหรับบริษัท</button></div>
         <div class="other">
-          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-ellipsis-v" onclick="swip_menu(this)"></i>
           <ul>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
+            <a href=""><li><i class="far fa-newspaper"></i> บทความ</li></a>
+            <a href=""><li><i class="fas fa-mobile-alt"></i> ติดต่อเรา</li></a>
+            <a href=""><li><i class="fas fa-gavel"></i> เงื่อนไขการใช้บริการ</li></a>
+            <a href=""><li><i class="fas fa-fingerprint"></i> นโยบายความเป็นส่วนตัว</li></a>
+            <a href=""><li><i class="fas fa-exclamation-triangle"></i> ข้อจำกัดความรับผิดชอบ</li></a>
           </ul>
         </div>
         <div class="lang">
@@ -174,6 +176,7 @@
   </footer>
   
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/app.js"></script>
   <script src="/js/home.js"></script>
 </body>
 </html>

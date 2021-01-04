@@ -105,6 +105,10 @@ header{
 
     a{
       color: $white;
+
+      img{
+        width: 160px;
+      }
     }
   }
 
@@ -133,9 +137,35 @@ header{
     .other{
       margin: 0 1em;
 
-      i{
+      >i{
         cursor: pointer;
         color: $white;
+      }
+
+      >ul{
+        background: $dark-blue;
+        color: #fff;
+        padding: .5em;
+        position: absolute;
+        top: -100em;
+        right: 0;
+        height: max-content;
+        width: max-content;
+        z-index: 5;
+        transition: .3s;
+
+        li{
+          margin: .25em 0;
+
+          i{
+            width: 20px;
+          }
+        }
+
+        &.active{
+          top: 3em;
+          transition: .3s;
+        }
       }
     }
 

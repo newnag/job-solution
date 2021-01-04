@@ -1,23 +1,23 @@
-.company-normal {
+.company-normal, .job-normal {
   max-width: 1364px;
   margin: 3em auto;
 }
 
-.company-normal .head-title {
+.company-normal .head-title, .job-normal .head-title {
   text-align: center;
   margin: 1em 0;
 }
 
-.company-normal .head-title h2 {
+.company-normal .head-title h2, .job-normal .head-title h2 {
   color: #1468B2;
   font-size: 1.3em;
 }
 
-.company-normal .logo-company {
+.company-normal .logo-company, .job-normal .logo-company {
   position: relative;
 }
 
-.company-normal .logo-company .logo {
+.company-normal .logo-company .logo, .job-normal .logo-company .logo {
   width: 10%;
   position: absolute;
   top: 50%;
@@ -26,7 +26,7 @@
           transform: translate(-50%, -60%);
 }
 
-.company-normal .logo-company .company-name {
+.company-normal .logo-company .company-name, .job-normal .logo-company .company-name {
   position: absolute;
   left: 50%;
   bottom: 10%;
@@ -36,34 +36,34 @@
   text-align: center;
 }
 
-.company-normal .logo-company .company-name h1 {
+.company-normal .logo-company .company-name h1, .job-normal .logo-company .company-name h1 {
   color: #fff;
   font-size: 2.6em;
   margin: 1em 0;
 }
 
-.company-normal .logo-company .company-name a {
+.company-normal .logo-company .company-name a, .job-normal .logo-company .company-name a {
   color: #fff;
   margin: .5em 0;
 }
 
-.company-normal .logo-company .company-name p {
+.company-normal .logo-company .company-name p, .job-normal .logo-company .company-name p {
   color: #fff;
   margin: .5em 0;
 }
 
-.company-normal .logo-company .company-name button {
+.company-normal .logo-company .company-name button, .job-normal .logo-company .company-name button {
   color: #fff;
   background: inherit;
   border: 1px solid #fff;
 }
 
-.company-normal .logo-company .company-name button.active {
+.company-normal .logo-company .company-name button.active, .job-normal .logo-company .company-name button.active {
   background: #fff;
   color: #000;
 }
 
-.company-normal .logo-company .bg {
+.company-normal .logo-company .bg, .job-normal .logo-company .bg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,12 +73,12 @@
           flex-direction: column;
 }
 
-.company-normal .detail-company {
+.company-normal .detail-company, .job-normal .detail-company {
   width: 60%;
   margin: 3em auto;
 }
 
-.company-normal .detail-company .title {
+.company-normal .detail-company .title, .job-normal .detail-company .title {
   text-align: center;
   color: #1468B2;
   position: relative;
@@ -86,7 +86,7 @@
   padding: 0.5em 0;
 }
 
-.company-normal .detail-company .title:after {
+.company-normal .detail-company .title:after, .job-normal .detail-company .title:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -97,11 +97,139 @@
           transform: translateX(-50%);
 }
 
-.company-normal .detail-company .ck {
+.company-normal .detail-company .ck, .job-normal .detail-company .ck {
   padding: 1em 0;
 }
 
-.company-normal .detail-company .ck p {
+.company-normal .detail-company .ck p, .job-normal .detail-company .ck p {
   margin: .5em 0;
+}
+
+.company-normal .job-table, .job-normal .job-table {
+  width: 60%;
+  margin: 3em auto;
+}
+
+.company-normal .job-table .title, .job-normal .job-table .title {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.company-normal .job-table .title h2, .job-normal .job-table .title h2 {
+  font-weight: lighter;
+  font-size: 1.4em;
+}
+
+.company-normal .job-table .grid-job, .job-normal .job-table .grid-job {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  grid-row-gap: 1em;
+}
+
+.company-normal .job-table .grid-job a:nth-child(odd), .job-normal .job-table .grid-job a:nth-child(odd) {
+  background: #f8f8f8;
+}
+
+.company-normal .job-table .grid-job a .box, .job-normal .job-table .grid-job a .box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  padding: 1em;
+}
+
+.company-normal .job-table .grid-job a .box figure, .job-normal .job-table .grid-job a .box figure {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.company-normal .job-table .grid-job a .box figure .box-hover, .job-normal .job-table .grid-job a .box figure .box-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.company-normal .job-table .grid-job a .box .detail, .job-normal .job-table .grid-job a .box .detail {
+  margin-left: .5em;
+}
+
+.company-normal .job-table .grid-job a .box .detail .name h4, .job-normal .job-table .grid-job a .box .detail .name h4 {
+  color: #27B1F8;
+  font-weight: lighter;
+}
+
+.company-normal .job-table .grid-job a .box .detail .company, .job-normal .job-table .grid-job a .box .detail .company {
+  font-size: .8em;
+}
+
+.company-normal .job-table .grid-job a .box .detail .address, .job-normal .job-table .grid-job a .box .detail .address {
+  font-size: .8em;
+}
+
+.company-normal .job-table .grid-job a .box .detail .address i, .job-normal .job-table .grid-job a .box .detail .address i {
+  margin-right: 5px;
+}
+
+.company-normal .job-table .grid-job a .box .detail .salary i, .job-normal .job-table .grid-job a .box .detail .salary i {
+  margin-right: 5px;
+}
+
+.company-normal .job-table .grid-job a .box .detail .tag, .job-normal .job-table .grid-job a .box .detail .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.company-normal .job-table .grid-job a .box .detail .tag .type, .job-normal .job-table .grid-job a .box .detail .tag .type {
+  color: #2EC800;
+  border: 1px solid #2EC800;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: .8em;
+  margin-right: .25em;
+}
+
+.company-normal .job-table .grid-job a .box .detail .tag .assis, .company-normal .job-table .grid-job a .box .detail .tag .wfh, .job-normal .job-table .grid-job a .box .detail .tag .assis, .job-normal .job-table .grid-job a .box .detail .tag .wfh {
+  color: #27B1F8;
+  border: 1px solid #27B1F8;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: .8em;
+  margin: 0 .25em;
+}
+
+.company-normal .job-table .grid-job a .box .detail .tag .urgent, .job-normal .job-table .grid-job a .box .detail .tag .urgent {
+  color: #fff;
+  background: #FF0000;
+  border: 1px solid #FF0000;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: .8em;
+  margin-left: .25em;
+}
+
+.company-normal .map, .job-normal .map {
+  width: 100%;
+  height: 100%;
+}
+
+.company-normal .map iframe, .job-normal .map iframe {
+  width: 100% !important;
+  height: 300px !important;
+}
+
+.job-normal .logo-company .logo {
+  top: 1em;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 /*# sourceMappingURL=page-normal.css.map */

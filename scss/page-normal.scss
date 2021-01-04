@@ -1,6 +1,6 @@
 @import 'variable';
 
-.company-normal{
+.company-normal,.job-normal{
   max-width: 1364px;
   margin: 3em auto;
 
@@ -92,6 +92,129 @@
       p{
         margin: .5em 0;
       }
+    }
+  }
+
+  .job-table{
+    width: 60%;
+    margin: 3em auto;
+
+    .title{
+      text-align: center;
+      margin-bottom: 2em;
+
+      h2{
+        font-weight: lighter;
+        font-size: 1.4em;
+      }
+    }
+
+    .grid-job{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-row-gap: 1em;
+
+      a{
+        &:nth-child(odd){
+          background: #f8f8f8;
+        }
+
+        .box{
+          display: grid;
+          grid-template-columns: 20% 80%;
+          padding: 1em;
+    
+          figure{
+            position: relative;
+            width: 130px;
+            height: 130px;
+            display: flex;
+    
+            .box-hover{
+              display: none;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
+          }
+    
+          .detail{
+            margin-left: .5em;
+    
+            .name{
+              h4{
+                color: $sky;
+                font-weight: lighter;
+              }
+            }
+            .company{
+              font-size: .8em;
+            }
+            .address{
+              font-size: .8em;
+    
+              i{
+                margin-right: 5px;
+              }
+            }
+            .salary{
+              i{
+                margin-right: 5px;
+              }
+            }
+            .tag{
+              display: flex;
+    
+              .type{
+                color: $green;
+                border: 1px solid $green;
+                border-radius: 5px;
+                padding: 3px;
+                font-size: .8em;
+                margin-right: .25em;
+              }
+              .assis,.wfh{
+                color: $sky;
+                border: 1px solid $sky;
+                border-radius: 5px;
+                padding: 3px;
+                font-size: .8em;
+                margin: 0 .25em;
+              }
+              .urgent{
+                color: $white;
+                background: $red;
+                border: 1px solid $red;
+                border-radius: 5px;
+                padding: 3px;
+                font-size: .8em;
+                margin-left: .25em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .map{
+    width: 100%;
+    height: 100%;
+
+    iframe{
+      width: 100%!important;
+      height: 300px!important;
+    }
+  }
+}
+
+.job-normal{
+  .logo-company{
+    .logo{
+      top: 1em;
+      transform: translate(-50%);
     }
   }
 }
