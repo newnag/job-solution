@@ -15,8 +15,8 @@
 </head>
 <body>
   <header>
-    <div class="header">
-      <div class="left"><a href="">JOB SOLUTION</a></div>
+    <div class="header loging">
+      <div class="left"><a href=""><img src="/img/logo/Logowhite-07.svg" alt=""></a></div>
       <div class="right">
         <ul class="menu">
           <a href="">
@@ -34,16 +34,27 @@
           <a href="">
             <li><i class="fas fa-sign-in-alt"></i> เข้าสู่ระบบ</li>
           </a>
+          <li class="account">
+            <i class="far fa-user"></i> บัญขีของฉัน
+
+            <ul>
+              <a href=""><li><i class="far fa-newspaper"></i> ประวัติของฉัน</li></a>
+              <a href=""><li><i class="fas fa-sign-out-alt"></i> ออกจากระบบ</li></a>
+            </ul>
+          </li>
+
+          
           <li><i class="fas fa-globe"></i> TH</li>
         </ul>
         <div class="company"><button class="form-component button">สำหรับบริษัท</button></div>
         <div class="other">
-          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-ellipsis-v" onclick="swip_menu(this)"></i>
           <ul>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
+            <a href=""><li><i class="far fa-newspaper"></i> บทความ</li></a>
+            <a href=""><li><i class="fas fa-mobile-alt"></i> ติดต่อเรา</li></a>
+            <a href=""><li><i class="fas fa-gavel"></i> เงื่อนไขการใช้บริการ</li></a>
+            <a href=""><li><i class="fas fa-fingerprint"></i> นโยบายความเป็นส่วนตัว</li></a>
+            <a href=""><li><i class="fas fa-exclamation-triangle"></i> ข้อจำกัดความรับผิดชอบ</li></a>
           </ul>
         </div>
         <div class="lang">
@@ -58,7 +69,7 @@
   <main>
     <div class="job-normal">
       <div class="head-title">
-        <h2>รายชื่องาน / ชื่อบริษัท</h2>
+        <h2>รายชื่องาน / ชื่อบริษัท / ชื่อตำแหน่ง</h2>
       </div>
     
       <div class="logo-company">
@@ -70,16 +81,26 @@
 
           <p><i class="fas fa-map-marker-alt"></i> Mumbai / Bangalore / Mahasarakham</p>
 
-          <button class="form-component button"><i class="fas fa-check"></i> ติดตาม</button>
+          <div class="button">
+            <a href=""><button class="form-component button"><i class="far fa-heart"></i> favoritert</button></a>
+            <a href=""><button class="form-component button"><i class="fas fa-briefcase"></i> ดูงานทั้งหมดของ ชื่อบริษัท</button></a>
+          </div>
+
+          <div class="social-button">
+            <a href=""><div class="facebook-button"><i class="fab fa-facebook-square"></i></div></a>
+            <a href=""><div class="twitter-button"><i class="fab fa-twitter"></i></div></a>
+          </div>
+
+          <div class="apply-button">
+            <button class="form-component button">สมัครงาน</button>
+          </div>
         </div>
         
-        <div class="bg">
-          <img src="/img/bg-02.jpg" alt="">
-        </div>
+        
       </div>
 
       <div class="detail-company">
-        <div class="title"><h2>รายละเอียดเกี่ยวกับ ชื่อบริษัท</h2></div>
+        <div class="title"><h2>รายละเอียดงาน</h2></div>
 
         <div class="ck">
           <p>
@@ -96,166 +117,52 @@
         </div>
       </div>
 
-      <div class="detail-company">
-        <div class="title"><h2>สวัสดิการ</h2></div>
+      <div class="detail-company req">
+        <div class="title"><h2>ทักษะและความต้องการ</h2></div>
 
-        <div class="ck">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Cum possimus facere dolorum minima aliquam molestias adipisci error, 
-            eos autem voluptatum dolores eum quidem. 
-            Vero, corrupti harum! Magnam eligendi omnis nostrum?
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Cum possimus facere dolorum minima aliquam molestias adipisci error, 
-            eos autem voluptatum dolores eum quidem. 
-          </p>
+        <div class="req-content responsibility">
+          <h3>หน้าที่ความรับผิดชอบ / Responsibilities :</h3>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        </div>
+
+        <div class="req-content skill">
+          <h3>ทักษะที่จำเป็น / Required Skill :</h3>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        </div>
+
+        <div class="req-content desired">
+          <h3>ทักษะที่ต้องการ / Desired Skill :</h3>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        </div>
+
+        <div class="req-content desired">
+          <h3>สวัสดิการ / Our Perks :</h3>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>* Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
         </div>
       </div>
 
-      <div class="job-table">
-        <div class="title"><h2>5 Job Opening</h2></div>
+      <div class="detail-company more-detail">
+        <div class="title"><h2>ข้อมูลเพิ่มเติม</h2></div>
 
-        <div class="grid-job">
-          <a href="">
-            <div class="box">
-              <figure>
-                <img src="/img/brand/coke-logo.png" alt="">
-                <div class="box-hover">
-                  <div class="fav"><span><i class="far fa-heart"></i> favorisiert</span></div>
-                  <div class="detail"><span><i class="fas fa-scroll"></i> รายละเอียด</span></div>
-                </div>
-              </figure>
-      
-              <div class="detail">
-                <div class="name"><h4>Manager Production</h4></div>
-                <div class="company"><span>The Coca-Cola Company</span></div>
-                <div class="address"><i class="fas fa-map-marker-alt"></i><span>Los Angeles, CA, USA</span></div>
-                <div class="salary"><i class="fas fa-coins"></i><span>$3,000 - $5,000</span></div>
-                <div class="tag">
-                  <div class="type"><span>ตามสัญญา</span></div>
-                  <div class="assis"><span>Relocation assistance</span></div>
-                  <div class="wfh"><span>Work From Home</span></div>
-                  <div class="urgent"><span>Urgent</span></div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href="">
-            <div class="box">
-              <figure>
-                <img src="/img/brand/pizza-logo.png" alt="">
-                <div class="box-hover">
-                  <div class="fav"><span><i class="far fa-heart"></i> favorisiert</span></div>
-                  <div class="detail"><span><i class="fas fa-scroll"></i> รายละเอียด</span></div>
-                </div>
-              </figure>
-      
-              <div class="detail">
-                <div class="name"><h4>Manager Packeting</h4></div>
-                <div class="company"><span>The Coca-Cola Company</span></div>
-                <div class="address"><i class="fas fa-map-marker-alt"></i><span>Los Angeles, CA, USA</span></div>
-                <div class="salary"><i class="fas fa-coins"></i><span>$3,000 - $5,000</span></div>
-                <div class="tag">
-                  <div class="type"><span>ประจำ</span></div>
-                  <div class="wfh"><span>Work From Home</span></div>
-                </div>
-              </div>
-            </div>
-          </a>
-    
-          <a href="">
-            <div class="box">
-              <figure>
-                <img src="/img/brand/logomakro_v2.png" alt="">
-                <div class="box-hover">
-                  <div class="fav"><span><i class="far fa-heart"></i> favorisiert</span></div>
-                  <div class="detail"><span><i class="fas fa-scroll"></i> รายละเอียด</span></div>
-                </div>
-              </figure>
-      
-              <div class="detail">
-                <div class="name"><h4>Engineer</h4></div>
-                <div class="company"><span>The Coca-Cola Company</span></div>
-                <div class="address"><i class="fas fa-map-marker-alt"></i><span>Los Angeles, CA, USA</span></div>
-                <div class="salary"><i class="fas fa-coins"></i><span>$3,000 - $5,000</span></div>
-                <div class="tag">
-                  <div class="type"><span>ประจำ</span></div>
-                </div>
-              </div>
-            </div>
-          </a>
-    
-          <a href="">
-            <div class="box">
-              <figure>
-                <img src="/img/brand/coke-logo.png" alt="">
-                <div class="box-hover">
-                  <div class="fav"><span><i class="far fa-heart"></i> favorisiert</span></div>
-                  <div class="detail"><span><i class="fas fa-scroll"></i> รายละเอียด</span></div>
-                </div>
-              </figure>
-      
-              <div class="detail">
-                <div class="name"><h4>Manager Production</h4></div>
-                <div class="company"><span>The Coca-Cola Company</span></div>
-                <div class="address"><i class="fas fa-map-marker-alt"></i><span>Los Angeles, CA, USA</span></div>
-                <div class="salary"><i class="fas fa-coins"></i><span>$3,000 - $5,000</span></div>
-                <div class="tag">
-                  <div class="type"><span>ตามสัญญา</span></div>
-                  <div class="assis"><span>Relocation assistance</span></div>
-                  <div class="wfh"><span>Work From Home</span></div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href="">
-            <div class="box">
-              <figure>
-                <img src="/img/brand/CIG_logo.png" alt="">
-                <div class="box-hover">
-                  <div class="fav"><span><i class="far fa-heart"></i> favorisiert</span></div>
-                  <div class="detail"><span><i class="fas fa-scroll"></i> รายละเอียด</span></div>
-                </div>
-              </figure>
-      
-              <div class="detail">
-                <div class="name"><h4>Manager Packeting</h4></div>
-                <div class="company"><span>The Coca-Cola Company</span></div>
-                <div class="address"><i class="fas fa-map-marker-alt"></i><span>Los Angeles, CA, USA</span></div>
-                <div class="salary"><i class="fas fa-coins"></i><span>$3,000 - $5,000</span></div>
-                <div class="tag">
-                  <div class="type"><span>ประจำ</span></div>
-                  <div class="wfh"><span>Work From Home</span></div>
-                  <div class="urgent"><span>Urgent</span></div>
-                </div>
-              </div>
-            </div>
-          </a>
-    
-          <a href="">
-            <div class="box">
-              <figure>
-                <img src="/img/brand/NRS_Logo.png" alt="">
-                <div class="box-hover">
-                  <div class="fav"><span><i class="far fa-heart"></i> favorisiert</span></div>
-                  <div class="detail"><span><i class="fas fa-scroll"></i> รายละเอียด</span></div>
-                </div>
-              </figure>
-      
-              <div class="detail">
-                <div class="name"><h4>Engineer</h4></div>
-                <div class="company"><span>The Coca-Cola Company</span></div>
-                <div class="address"><i class="fas fa-map-marker-alt"></i><span>Los Angeles, CA, USA</span></div>
-                <div class="salary"><i class="fas fa-coins"></i><span>$3,000 - $5,000</span></div>
-                <div class="tag">
-                  <div class="type"><span>ประจำ</span></div>
-                  <div class="urgent"><span>Urgent</span></div>
-                </div>
-              </div>
-            </div>
-          </a>
+        <div class="detail">
+          <li><i class="fas fa-plane"></i> Relocation assistance</li>
+          <li><i class="fas fa-signal"></i> Work Remotely</li>
         </div>
       </div>
 
@@ -310,6 +217,7 @@
   </footer>
   
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/app.js"></script>
   <script src="/js/home.js"></script>
 </body>
 </html>

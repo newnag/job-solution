@@ -1,0 +1,84 @@
+@import 'variable';
+
+.login-box,.register-box{
+  max-width: 1364px;
+  margin: 3em auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 0 10em;
+
+  .left-side{
+    img{
+      border-radius: 10px 0 0 0;
+    }
+  }
+
+  .right-side{
+    background: url(/img/bg-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 10px 0;
+
+    .login-zone{
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+
+      h1,label{
+        color: $white;
+      }
+
+      .input-login{
+        margin: 1em 0;
+
+        .input-box{
+          margin-bottom: .5em;
+        }
+
+        .button{
+          margin-top: 1em;
+          text-align: center;
+
+          button{
+            padding: 10px;
+            background: $dark-black;
+            color: $white;
+          }
+        }
+      }
+
+      .forget{
+        color: $dark-blue;
+      }
+    }
+  }
+}
+
+.register-box{
+  .input-login{
+    .tig{
+      margin-top: 1em;
+
+      label{
+        a{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .forget-login{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+
+    .login{
+      a{
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+}

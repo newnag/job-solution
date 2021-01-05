@@ -1,0 +1,93 @@
+@import 'variable';
+
+.page{
+  max-width: 1364px;
+  margin: 3em auto;
+  display: grid;
+  grid-template-columns: 24% 74%;
+  grid-column-gap: 2%;
+
+  .aside{
+    background: url(/img/bg-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em;
+
+    li{
+      margin: 1em 0;
+      color: $white;
+
+      i{
+        margin-right: 5px;
+      }
+    }
+    .personal{
+      cursor: pointer;
+
+      ul{
+        padding-left: 3em;
+
+        li{
+          font-size: .9em;
+
+          &:before{
+            content: '-';
+            margin-right: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  .main-content{
+    .head-title{
+      margin-bottom: 2em;
+
+      h1{
+        color: $blue;
+      }
+    }
+
+    .info-page{
+      .picture{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 30%;
+
+        figure{
+          img{
+            width: 130px;
+            height: 150px;
+            cursor: pointer;
+          }
+        }
+
+        .detail{
+          p{
+            font-size: .7em;
+          }
+
+          button{
+            margin-top: .5em;
+            background: $blue;
+            color: $white;
+          }
+        }
+      }
+
+      .detail-info{
+        margin: 1em 0;
+      }
+
+      .tig-public{
+        .public{
+          margin-bottom: 2em;
+        }
+        p{
+          font-size: .9em;
+          color: $light-gray;
+        }
+      }
+    }
+  }
+}
