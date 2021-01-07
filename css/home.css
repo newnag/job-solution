@@ -257,6 +257,8 @@
 .urgent-job .grid-box .box .detail .name h4 {
   color: #27B1F8;
   font-weight: lighter;
+  height: 1.6em;
+  overflow-y: hidden;
 }
 
 .urgent-job .grid-box .box .detail .company {
@@ -514,6 +516,11 @@
 .grid-job .grid-box .box .detail .name h4 {
   color: #27B1F8;
   font-weight: lighter;
+  height: 1.6em;
+  overflow-y: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .grid-job .grid-box .box .detail .company {

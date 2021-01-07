@@ -220,6 +220,8 @@
           h4{
             color: $sky;
             font-weight: lighter;
+            height: 1.6em;
+            overflow-y: hidden;
           }
         }
         .company{
@@ -433,6 +435,11 @@
           h4{
             color: $sky;
             font-weight: lighter;
+            height: 1.6em;
+            overflow-y: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
           }
         }
         .company{
