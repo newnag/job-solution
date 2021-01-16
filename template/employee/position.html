@@ -88,47 +88,68 @@
 
       <div class="main-content">
         <div class="head-title">
-          <h1>ข้อมูลการสมัครสมาชิก</h1>
+          <h1>ลักษณะงานที่ต้องการ</h1>
+          <p>*กรุณากรอกข้อมูลในช่อง (*) ให้ครบ</p>
         </div>
 
-        <div class="info-page">
-          <div class="picture">
-            <figure><img src="/img/avatar.jpg" alt=""></figure>
-            <div class="detail">
-              <button class="form-component button">Choose File</button>
-              <p>อัพโหลดได้เฉพาะไฟล์รูปภาพ ประเภท jpg png gif และมีขนาดไม่เกิน 3Mb</p>
-            </div>
-          </div>
+        <div class="personal-page">
+            <form action="">  
+              <div class="row">
+                <div class="input-box">
+                  <label for="">Position 1 *</label>
+                  <input type="text" placeholder="" class="form-component input">
+                </div>
 
-          <div class="detail-info">
-            <p>รหัสสมาชิก : 123456</p>
-            <p>เป็นสมาชิกตั้งแต่ : 20 มิ.ค. 2563</p>
-            <p>เข้าใช้งานล่าสุด : 2 ธ.ค. 2563</p>
-            <p>แก้ไขข้อมูลล่าสุด : 2 ธ.ค. 2563</p>
-          </div>
+                <div class="input-box">
+                  <label for="">Position 2 *</label>
+                  <input type="text" placeholder="" class="form-component input">
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-box">
+                  <label for="">ประเภทงาน *</label>
+                  <select name="" id="" class="form-component input">
+                    <option value="">ศิลปะ/ออกแบบ/กราฟฟิค</option>
+                    <option value="">โปรแกรมเมอร์</option>
+                    <option value="">การตลาด</option>
+                  </select>
+                </div>
+              </div>
 
-          <div class="tig-public">
-            <div class="public">
-              <input type="radio" id="public" name="public-data" checked>
-              <label for="public">เปิดเผยข้อมูลทั้งหมด : </label>
-              <p>ประวัติของคุณสามารถถูกสืบค้นจากบริษัทชั้นนำ ซึ่งกำลังต้องการพนักงาน หรือผู้บริหารที่มีความสามารถเช่นคุณ</p>
-            </div>
+              <div class="row">
+                <div class="input-box">
+                  <label for="">ระยะเวลาการทำงาน *</label>
+                  <select name="" id="" class="form-component input">
+                    <option value="">ประจำ</option>
+                    <option value="">ชั่วคราว</option>
+                  </select>
+                </div>
 
-            <div class="unpublic">
-              <input type="radio" id="unpublic" name="public-data">
-              <label for="unpublic">ไม่เปิดเผยข้อมูล (ใช้ในการส่งใบสมัครอย่างเดียว) : </label>
-              <p>
-                คุณสามารถปกปิดประวัติเพื่อรักษาความเป็นส่วนตัวของคุณได้ โดยประวัติของคุณจะไม่สามารถถูกสืบค้นจากบริษัทใดๆ
-                การฝากประวัติของคุณ มีไว้เพื่อใช้ในบริการส่งใบสมัครเท่านั้น
-              </p>
-            </div>
-          </div>
+                <div class="input-box">
+                  <label for="">เงินเดือนที่ต้อง *</label>
+                  <input type="number" placeholder="" class="form-component input">
+                </div>
+              </div>
 
-          <div class="button-group">
-            <button class="form-component button">Save</button>
-            <button class="form-component button">Change Email</button>
-            <button class="form-component button">Change Password</button>
-          </div>
+              <div class="row">
+                <div class="input-box">
+                  <label for="">สถานที่ต้องการทำงาน *</label>
+                  <input type="text" class="form-component input" placeholder="ขอนแก่น,สารคาม">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-radio insure">
+                  <input type="checkbox" id="insure">
+                  <label for="insure">ทำเครื่องหมายถูกในช่องนี้หากท่าน <span>"ไม่สนใจงานขายประกัน"</span></label>
+                </div>
+              </div>
+              
+              <div class="submit-button">
+                <button type="button" class="form-component button">Submit</button>
+              </div>
+            </form>
         </div>
       </div>
     </div>

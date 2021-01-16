@@ -5,9 +5,8 @@ window.onload = ()=>{
 
 function slide(){
   let swiper = new Swiper('.slide-home .slide', {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    slidesPerGroup: 4,
+    slidesPerView: 1,
+    spaceBetween: 2,
     loop: true,
     loopFillGroupWithBlank: true,
     // navigation: {
@@ -17,14 +16,26 @@ function slide(){
     autoplay: {
       delay: 5000,
     },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        slidesPerGroup: 2,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 4,
+      },
+    }
   });
 }
 
 function slide_ad(){
   let swiper = new Swiper('.box-img-vip .slide-vip', {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 20,
-    slidesPerGroup: 2,
+    slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -33,5 +44,12 @@ function slide_ad(){
     autoplay: {
       delay: 5000,
     },
+    breakpoints: {
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        slidesPerGroup: 2,
+      },
+    }
   });
 }

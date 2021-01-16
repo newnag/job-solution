@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Solution</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/37e3c13129.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="/css/job.min.css">
+  <link rel="stylesheet" href="/css/employee.min.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="left"><a href=""><img src="/img/logo/Logowhite-07.svg" alt=""></a></div>
+      <div class="right">
+        <ul class="menu">
+          <a href="">
+            <li><i class="far fa-building"></i> บริษัททั้งหมด</li>
+          </a>
+          <a href="">
+            <li><i class="fas fa-home"></i> เกี่ยวกับเรา</li>
+          </a>
+          <a href="">
+            <li><i class="fas fa-id-card"></i> ฝากประวัติ</li>
+          </a>
+          <a href="">
+            <li><i class="fas fa-edit"></i> สมัครสมาชิก</li>
+          </a>
+          <a href="">
+            <li><i class="fas fa-sign-in-alt"></i> เข้าสู่ระบบ</li>
+          </a>
+          <li class="account">
+            <i class="far fa-user"></i> บัญขีของฉัน
+
+            <ul>
+              <a href=""><li><i class="far fa-newspaper"></i> ประวัติของฉัน</li></a>
+              <a href=""><li><i class="fas fa-sign-out-alt"></i> ออกจากระบบ</li></a>
+            </ul>
+          </li>
+
+          
+          <li><i class="fas fa-globe"></i> TH</li>
+        </ul>
+        <div class="company"><button class="form-component button">สำหรับบริษัท</button></div>
+        <div class="other">
+          <i class="fas fa-ellipsis-v" onclick="swip_menu(this)"></i>
+          <ul>
+            <a href=""><li><i class="far fa-newspaper"></i> บทความ</li></a>
+            <a href=""><li><i class="fas fa-mobile-alt"></i> ติดต่อเรา</li></a>
+            <a href=""><li><i class="fas fa-gavel"></i> เงื่อนไขการใช้บริการ</li></a>
+            <a href=""><li><i class="fas fa-fingerprint"></i> นโยบายความเป็นส่วนตัว</li></a>
+            <a href=""><li><i class="fas fa-exclamation-triangle"></i> ข้อจำกัดความรับผิดชอบ</li></a>
+          </ul>
+        </div>
+        <div class="lang">
+          <li><i class="fas fa-globe"></i> TH</li>
+          <li><i class="fas fa-globe"></i> EN</li>
+          <li><i class="fas fa-globe"></i> KH</li>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page">
+      <div class="aside">
+        <li><a href=""><i class="fas fa-edit"></i> ข้อมูลการสมัครสมาชิก</a></li>
+        <li class="personal">
+          <i class="far fa-address-card"></i> ประวัติส่วนตัว <i class="fas fa-chevron-up"></i>
+
+          <ul>
+            <li><a href="">ข้อมูลส่วนตัว</a></li>
+            <li><a href="">ลักษณะงานที่ต้องการ</a></li>
+            <li><a href="">ประวัติการศึกษา</a></li>
+            <li><a href="">ประวัติการทำงาน/ฝึกงาน</a></li>
+            <li><a href="">ประวัติการฝึกอบรม/ประกาศนียบัตร</a></li>
+            <li><a href="">ความสามารถ/ผลงาน</a></li>
+            <li><a href="">Portfolio</a></li>
+          </ul>
+        </li>
+        <li><a href=""><i class="fas fa-briefcase"></i> งานของฉัน </a></li>
+      </div>
+
+      <div class="main-content">
+        <div class="head-title">
+          <h1>ข้อมูลส่วนตัว</h1>
+          <p>*กรุณากรอกข้อมูลในช่อง (*) ให้ครบ</p>
+        </div>
+
+        <div class="personal-page">
+            <form action="">  
+              <div class="row">
+                <div class="input-box">
+                  <label for="">Email *</label>
+                  <input type="text" placeholder="" class="form-component input">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-box">
+                  <label for="">Fitst-Name *</label>
+                  <input type="text" placeholder="" class="form-component input">
+                </div>
+
+                <div class="input-box">
+                  <label for="">Last-Name *</label>
+                  <input type="text" placeholder="" class="form-component input">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-box">
+                  <label for="">Day *</label>
+                  <select name="select_day" id="select_day" class="form-component input"></select>
+                </div>
+
+                <div class="input-box">
+                  <label for="">Month *</label>
+                  <select name="select_month" id="select_month" class="form-component input">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                  </select>
+                </div>
+
+                <div class="input-box">
+                  <label for="">Year *</label>
+                  <select name="select_year" id="select_year" class="form-component input">
+                    <option value="">2021</option>
+                    <option value="">2020</option>
+                    <option value="">2019</option>
+                    <option value="">2018</option>
+                    <option value="">2017</option>
+                    <option value="">2016</option>
+                    <option value="">2015</option>
+                    <option value="">2014</option>
+                    <option value="">2013</option>
+                    <option value="">2012</option>
+                    <option value="">2011</option>
+                    <option value="">2010</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-radio">
+                  <input type="radio" name="sex" id="sexM" checked class="form-component input">
+                  <label for="sexM">Male</label>
+                </div>
+
+                <div class="input-radio">
+                  <input type="radio" name="sex" id="sexF" class="form-component input">
+                  <label for="sexF">Female</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-box">
+                  <label for="">สถานะภาพ</label>
+                  <select name="status" id="status" class="form-component input">
+                    <option value="Single">Single</option>
+                    <option value="Marry">Marry</option>
+                  </select>
+                </div>
+
+                <div class="input-box">
+                  <label for="">Height</label>
+                  <input type="number" name="height" id="height" placeholder="176 cm" class="form-component input">
+                </div>
+
+                <div class="input-box">
+                  <label for="">Weight</label>
+                  <input type="number" name="weight" id="weight"  placeholder="65 kg" class="form-component input">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-box">
+                  <label for="">Nationality</label>
+                  <select name="" id="" class="form-component input">
+                    <option value="">Thai</option>
+                    <option value="">Khemer</option>
+                    <option value="">American</option>
+                  </select>
+                </div>
+
+                <div class="input-box">
+                  <label for="">Religion</label>
+                  <select name="" id="" class="form-component input">
+                    <option value="">Buddha</option>
+                    <option value="">Christian</option>
+                    <option value="">Islamic</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-box">
+                  <label for="">Military Status</label>
+                  <select name="" id="" class="form-component input">
+                    <option value="">Finished Reserved Officers Training Corps Course (R.O.T.C.)</option>
+                    <option value="">Reservist</option>
+                    <option value="">Registrant</option>
+                    <option value="">Exempted through Military Drawing Ballot</option>
+                    <option value="">Exempted by Being Undersize</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-box">
+                  <label for="">Address *</label>
+                  <input type="text" placeholder="Address" class="form-component input">
+                </div>
+
+                <div class="input-box">
+                  <label for="">Sub-District *</label>
+                  <select name="" id="" class="form-component input">
+                    <option value="">Sila</option>
+                    <option value="">Banped</option>
+                    <option value="">Gota</option>
+                  </select>
+                </div>
+
+                <div class="input-box">
+                  <label for="">Districk *</label>
+                  <select name="" id="" class="form-component input">
+                    <option value="">Muaung</option>
+                    <option value="">Banpai</option>
+                    <option value="">Pon</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-box">
+                  <label for="">Province *</label>
+                  <select name="" id="" class="form-component input">
+                    <option value="">Bangkok</option>
+                    <option value="">Khonkaen</option>
+                    <option value="">Chaing Mai</option>
+                  </select>
+                </div>
+
+                <div class="input-box">
+                  <label for="">Post *</label>
+                  <input type="tel" placeholder="Address" class="form-component input">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-box">
+                  <label for="">Phone</label>
+                  <input type="tel" placeholder="XXXXXXXXX" class="form-component input">
+                </div>
+
+                <div class="input-box">
+                  <label for="">Mobile Phone</label>
+                  <input type="tel" placeholder="XXXXXXXXXX" class="form-component input">
+                </div>
+              </div>
+              
+              <div class="submit-button">
+                <button type="button" class="form-component button">Submit</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="footer">
+      <div class="logo">
+        <img src="/img/brand/coke-logo.png" alt="">
+      </div>
+
+      <div class="about">
+        <h5>เกี่ยวกับเรา</h5>
+        <div class="address">
+          <p>บริษัทวินซอฟโซลูชั่น จำกัด (สำนักงานใหญ่)</p>
+          <p>120/34-35 Moo24 Muang Khonkaen, KhonKaen 40000</p>
+          <p>เลขประจำตัวผู้เสียภาษี 0123456789</p>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h5>ติดต่อเรา</h5>
+        <p>เวลาทำการ: จันทร์-เสาร์ 8:30 - 17:30 น.</p>
+        <p>ขอความช่วยเหลือ: wynnsoft20151@gmail.com</p>
+        <p>ต้องการพื้นที่โฆษณา: wynnsoft20151@gmail.com</p>
+        <p>เบอร์โทรศัพท์: 043-002-300, 062-909-1110 (การตลาด)</p>
+      </div>
+
+      <div class="social">
+        <h5>Social Networks</h5>
+        <div class="list">
+          <a href=""><div class="facebook"><i class="fab fa-facebook-square"></i><span>Like us on Facebook</span></div></a>
+          <a href=""><div class="twitter"><i class="fab fa-twitter-square"></i><span>Follow us on Twitter</span></div></a>
+          <a href=""><div class="instagram"><i class="fab fa-instagram"></i><span>Follow us on Instagram</span></div></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="copyright-text">
+        <p>
+          สงวนสิทธิ์ &copy; 2020 <a href="">บริษัทวินซอฟโซลูชั่น จำกัด</a>
+        </p>
+        <a href="">เงื่อนไขตกลงการใช้งาน</a>
+        <a href="">นโยบายความเป็นส่วนตัว</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const select_day = document.querySelector('#select_day')
+    for(i=1;i<=31;i++){
+      select_day.insertAdjacentHTML('beforeend',`<option value="${i}">${i}</option>`)
+    }
+  </script>
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

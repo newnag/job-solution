@@ -40,6 +40,14 @@ input{
     outline: none;
   }
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]{
+  -moz-appearance: textfield;
+}
 button,select{
   font-family: 'Prompt', sans-serif;
   font-size: inherit;
@@ -106,13 +114,30 @@ header{
   height: 50px;
   background-repeat: no-repeat;
   background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  @media screen and (min-width:1990px){
+    background-size: cover;
+  }
+}
+
+main{
+  margin-top: 4em;
 }
 
 .header{
   display: grid;
   height: 100%;
+  grid-template-columns: 50% 50%;
 
   @media screen and (min-width:$ipadpro){
+    grid-template-columns: 20% 80%;
+  }
+  @media screen and (min-width:$laptop){
     grid-template-columns: 30% 70%;
   }
 
@@ -135,10 +160,54 @@ header{
     align-items: center;
     justify-content: flex-end;
 
+    @media screen and (max-width:($ipadpro)-1px){
+      display: none;
+      position: fixed;
+      top: 49px;
+      right: 0;
+      width: 200px;
+      height: 400px;
+      background: linear-gradient(to left,$sky,$dark-blue);
+      z-index: 10;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 1em 0;
+      border-radius: 0 0 10px 10px;
+
+      .menu{
+        li{
+          margin: .5em 0;
+        }
+      }
+
+      .other{
+        margin-top: 2em!important;
+
+        i{
+          transform: rotate(90deg);
+        }
+
+        ul{
+          &.active{
+            top: 22em!important;
+          }
+        }
+      }
+
+      &.show{
+        display: flex;
+      }
+    }
+
     .menu{
       height: 100%;
       display: flex;
       align-items: center;
+
+      @media screen and (max-width:($ipadpro)-1px){
+        flex-direction: column;
+        height: max-content;
+      }
 
       li{
         margin-right: 1em;
@@ -220,6 +289,19 @@ header{
     }
   }
 
+  .hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: $white;
+    margin-right: 10px;
+    font-size: 1.4em;
+
+    @media screen and (min-width:$ipadpro){
+      display: none;
+    }
+  }
+
   &.loging{
     .right{
       .menu{
@@ -242,6 +324,7 @@ header{
   grid-template-columns: 100%;
   grid-row-gap: 1em;
   background: $dark-black;
+  padding: 0 1em;
 
   @media screen and (min-width:$laptop){
     grid-template-columns: 14% 30% 28% 23%;
@@ -259,6 +342,17 @@ header{
   .logo{
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width:$laptop){
+      border: 5px solid;
+      border-image-slice: 1;
+      border-width: 5px;
+      border-image-source: linear-gradient(to left,$dark-blue,$sky);
+      border-radius: 5px;
+      padding: 5px;
+    }  
+
     img{
       width: 100px;
       height: 100px;
@@ -276,10 +370,18 @@ header{
     }
 
     .list{
+      @media screen and (max-width:($ipadpro)-1px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1em;
+      }
+
       .facebook,.twitter,.instagram{
         margin: .5em 0;
         padding: 3px 10px;
         border-radius: 5px;
+        width: 240px;
 
         i{
           margin-right: 10px;
@@ -303,10 +405,12 @@ header{
 }
 
 .copyright{
-  background: url(/img/bg-head.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 43px;
+  background: linear-gradient(to left,$sky,$dark-blue);
+  height: 70px;
+
+  @media screen and (min-width:$ipadpro){
+    height: 43px;
+  }
 
   .copyright-text{
     display: flex;
@@ -314,12 +418,20 @@ header{
     align-items: center;
     height: 100%;
 
+    @media screen and (max-width:($ipadpro)-1px){
+      flex-direction: column;
+    }
+
     p{
       color: $white;
       font-size: .8em;
       margin-right: 1em;
       border-right: 1px solid $white;
       padding-right: 10px;
+
+      @media screen and (max-width:($ipadpro)-1px){
+        border: unset;
+      }
     }
     >a{
       color: $white;
@@ -327,6 +439,10 @@ header{
       margin-right: 1em;
       border-right: 1px solid $white;
       padding-right: 10px;
+
+      @media screen and (max-width:($ipadpro)-1px){
+        border: unset;
+      }
 
       &:last-child{
         border: unset;

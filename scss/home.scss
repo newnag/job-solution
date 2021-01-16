@@ -88,12 +88,17 @@
   .tag{
     display: flex;
     margin-top: 1em;
+    flex-wrap: wrap;
 
     .box{
       border: 1px solid $sky;
       border-radius: 5px;
       padding: 5px;
       margin: 0 .5em;
+
+      @media screen and (max-width:($ipadpro)-1px){
+        margin-bottom: 10px;
+      }
 
       span{
         font-size: .8em;
@@ -117,7 +122,11 @@
 .box-img-vip{
   max-width: 1346px;
   margin: 2em auto;
-  height: 220px;
+  height: 150px;
+
+  @media screen and (min-width:$ipadpro){
+    height: 220px;
+  }
 
   .slide-vip{
     height: 100%;
@@ -141,25 +150,56 @@
 
     h3{
       color: $dark-blue;
+      font-size: 1.2em;
+
+      @media screen and (min-width:$ipadpro){
+        font-size: 1.6em;
+      }
     }
 
     .pagination{
       display: flex;
       align-items: center;
 
-      .arrow{
-        margin: 0 .5em;
+      @media screen and (max-width:($ipadpro)-1px){
+        width: 30%;
+        flex-direction: column-reverse;
+      }
+
+      .page{
         display: flex;
+        align-items: center;
 
-        .prev,.next{
-          cursor: pointer;
-          margin: 0 .5em;
-          font-size: 1.2em;
-          color: $blue;
+        @media screen and (max-width:($ipadpro)-1px){
+          margin-top: .5em;
+        }
+        
+        span{
+          font-size: .6em;
 
-          &.disable{
-            color: $black;
-            cursor: default;
+          @media screen and (min-width:$ipadpro){
+            font-size: 1em;
+          }
+        }
+
+        .arrow{
+          margin: 0 .25em;
+          display: flex;
+
+          @media screen and (min-width:$ipadpro){
+            margin: 0 .5em;
+          }
+  
+          .prev,.next{
+            cursor: pointer;
+            margin: 0 .5em;
+            font-size: 1.2em;
+            color: $blue;
+  
+            &.disable{
+              color: $black;
+              cursor: default;
+            }
           }
         }
       }
@@ -197,11 +237,22 @@
       display: grid;
       grid-template-columns: 20% 80%;
 
+      @media screen and (max-width:($ipadpro)-1px){
+        border-bottom: 1px solid $dark-gray;
+        padding-bottom: 10px;
+      }
+
       figure{
         position: relative;
-        width: 130px;
-        height: 130px;
+        width: 70px;
+        height: 70px;
         display: flex;
+        margin: auto;
+
+        @media screen and (min-width:($ipadpro)){
+          width: 130px;
+          height: 130px;
+        }
 
         .box-hover{
           display: none;
@@ -222,6 +273,11 @@
             font-weight: lighter;
             height: 1.6em;
             overflow-y: hidden;
+            font-size: 1.2em;
+
+            @media screen and (min-width:$ipadpro){
+              font-size: 1.4em;
+            }
           }
         }
         .company{
@@ -241,6 +297,14 @@
         }
         .tag{
           display: flex;
+          flex-wrap: wrap;
+
+          @media screen and (max-width:($ipadpro)-1px){
+            .type,.assis,.wfh,.urgent{
+              font-size: .6em!important;
+              margin-bottom: 5px!important;
+            }
+          }
 
           .type{
             color: $green;
@@ -274,9 +338,16 @@
 }
 
 .search-box{
-  background: url(/img/bg-01.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  @media screen and (max-width:($ipadpro)-1px){
+    background: linear-gradient(to left, $sky,$dark-blue);
+    border-radius: 20px 20px 0 0;
+  }
+  
+  @media screen and (min-width:$ipadpro){
+    background: url(/img/bg-01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   .box{
     padding: 1em;
@@ -289,17 +360,21 @@
     .form{
       display: grid;
       grid-row-gap: .5em;
-      width: 50%;
-      margin: 1em auto;
-
+      grid-template-columns: 100%;
+      
       @media screen and (min-width:$ipadpro){
+        margin: 1em auto;
         grid-template-columns: 49% 49%;
         grid-column-gap: 2%;
+        width: 50%;
       }
 
       .input{
         width: 100%;
-        grid-column: 1/3;
+
+        @media screen and (min-width:$ipadpro){
+          grid-column: 1/3;
+        }
       }
 
       .input-box{
@@ -312,10 +387,18 @@
       }
 
       .check-group{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        grid-column: 1/3;
+        @media screen and (max-width:($ipadpro)-1px){
+          display: grid;
+          grid-template-columns: 100%;
+          grid-row-gap: 5px;
+        }
+
+        @media screen and (min-width:$ipadpro){
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          grid-column: 1/3;
+        }
 
         .checkbox{
           label{
@@ -324,17 +407,25 @@
         }
 
         .button{
-          width: 120px;
+          width: 100%;
+          text-align: center;
+          
+          @media screen and (min-width:$ipadpro){
+            
+          }
 
           button{
+            width: 120px;
             background: $blue;
             color: $white;
             transition: .3s;
 
-            &:hover{
-              background: $white;
-              color: $blue;
-              transition: .3s;
+            @media (hover:hover){
+              &:hover{
+                background: $white;
+                color: $blue;
+                transition: .3s;
+              }
             }
           }
         }
@@ -356,25 +447,56 @@
 
     h3{
       color: $dark-blue;
+      font-size: 1.2em;
+
+      @media screen and (min-width:$ipadpro){
+        font-size: 1.6em;
+      }
     }
 
     .pagination{
       display: flex;
       align-items: center;
 
-      .arrow{
-        margin: 0 .5em;
+      @media screen and (max-width:($ipadpro)-1px){
+        width: 30%;
+        flex-direction: column-reverse;
+      }
+
+      .page{
         display: flex;
+        align-items: center;
 
-        .prev,.next{
-          cursor: pointer;
-          margin: 0 .5em;
-          font-size: 1.2em;
-          color: $blue;
+        @media screen and (max-width:($ipadpro)-1px){
+          margin-top: .5em;
+        }
+        
+        span{
+          font-size: .6em;
 
-          &.disable{
-            color: $black;
-            cursor: default;
+          @media screen and (min-width:$ipadpro){
+            font-size: 1em;
+          }
+        }
+
+        .arrow{
+          margin: 0 .25em;
+          display: flex;
+
+          @media screen and (min-width:$ipadpro){
+            margin: 0 .5em;
+          }
+  
+          .prev,.next{
+            cursor: pointer;
+            margin: 0 .5em;
+            font-size: 1.2em;
+            color: $blue;
+  
+            &.disable{
+              color: $black;
+              cursor: default;
+            }
           }
         }
       }
@@ -412,11 +534,22 @@
       display: grid;
       grid-template-columns: 20% 80%;
 
+      @media screen and (max-width:($ipadpro)-1px){
+        border-bottom: 1px solid $dark-gray;
+        padding-bottom: 10px;
+      }
+
       figure{
         position: relative;
-        width: 130px;
-        height: 130px;
+        width: 70px;
+        height: 70px;
         display: flex;
+        margin: auto;
+
+        @media screen and (min-width:($ipadpro)){
+          width: 130px;
+          height: 130px;
+        }
 
         .box-hover{
           display: none;
@@ -437,9 +570,11 @@
             font-weight: lighter;
             height: 1.6em;
             overflow-y: hidden;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 1;
+            font-size: 1.2em;
+
+            @media screen and (min-width:$ipadpro){
+              font-size: 1.4em;
+            }
           }
         }
         .company{
@@ -459,6 +594,14 @@
         }
         .tag{
           display: flex;
+          flex-wrap: wrap;
+
+          @media screen and (max-width:($ipadpro)-1px){
+            .type,.assis,.wfh,.urgent{
+              font-size: .6em!important;
+              margin-bottom: 5px!important;
+            }
+          }
 
           .type{
             color: $green;
@@ -492,10 +635,18 @@
 }
 
 .article{
-  background: url(/img/bg-01.png);
-  background-repeat: no-repeat;
-  padding: 1em;
-  margin-bottom: 1em;
+  @media screen and (max-width:($ipadpro)-1px){
+    background: linear-gradient(to left, $sky,$dark-blue);
+    border-radius: 20px 20px 0 0;
+    padding: 1em;
+  }
+  
+  @media screen and (min-width:$ipadpro){
+    background: url(/img/bg-01.png);
+    background-repeat: no-repeat;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
 
   h2{
     text-align: center;
@@ -508,9 +659,12 @@
     grid-row-gap: 1em;
     margin-top: 1em;
 
+    @media screen and (min-width:$tablet){
+      grid-template-columns: repeat(2,1fr);
+      grid-column-gap: 1%;
+    }
     @media screen and (min-width:$ipadpro){
       grid-template-columns: repeat(6,1fr);
-      grid-column-gap: 1%;
     }
 
     .box{
