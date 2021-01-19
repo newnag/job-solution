@@ -1,11 +1,41 @@
 .login-box, .register-box {
   max-width: 1364px;
-  margin: 3em auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  padding: 0 10em;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .login-box, .register-box {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    margin: 3em auto;
+    padding: 0 2em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .login-box, .register-box {
+    padding: 0 10em;
+    margin: 15em auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .login-box, .register-box {
+    margin: 3em auto;
+  }
+}
+
+.login-box .left-side, .register-box .left-side {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .login-box .left-side, .register-box .left-side {
+    display: block;
+  }
 }
 
 .login-box .left-side img, .register-box .left-side img {
@@ -38,6 +68,22 @@
   color: #fff;
 }
 
+.login-box .right-side .login-zone h1, .register-box .right-side .login-zone h1 {
+  font-size: 1.6em;
+}
+
+@media screen and (min-width: 768px) {
+  .login-box .right-side .login-zone h1, .register-box .right-side .login-zone h1 {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .login-box .right-side .login-zone h1, .register-box .right-side .login-zone h1 {
+    font-size: 1.9em;
+  }
+}
+
 .login-box .right-side .login-zone .input-login, .register-box .right-side .login-zone .input-login {
   margin: 1em 0;
 }
@@ -59,6 +105,12 @@
 
 .login-box .right-side .login-zone .forget, .register-box .right-side .login-zone .forget {
   color: #001764;
+}
+
+@media screen and (max-width: 767px) {
+  .register-box {
+    margin-bottom: 2em;
+  }
 }
 
 .register-box .input-login .tig {

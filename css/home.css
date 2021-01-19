@@ -294,10 +294,11 @@
       grid-template-columns: 20% 80%;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1199px) {
   .urgent-job .grid-box .box {
     border-bottom: 1px solid #707070;
     padding-bottom: 10px;
+    height: 160px;
   }
 }
 
@@ -311,7 +312,7 @@
   margin: auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .urgent-job .grid-box .box figure {
     width: 130px;
     height: 130px;
@@ -339,7 +340,7 @@
   font-size: 1.2em;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .urgent-job .grid-box .box .detail .name h4 {
     font-size: 1.4em;
   }
@@ -369,7 +370,7 @@
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1199px) {
   .urgent-job .grid-box .box .detail .tag .type, .urgent-job .grid-box .box .detail .tag .assis, .urgent-job .grid-box .box .detail .tag .wfh, .urgent-job .grid-box .box .detail .tag .urgent {
     font-size: 0.6em !important;
     margin-bottom: 5px !important;
@@ -443,6 +444,12 @@
     -ms-grid-columns: 49% 49%;
         grid-template-columns: 49% 49%;
     grid-column-gap: 2%;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .search-box .box .form {
     width: 50%;
   }
 }
@@ -507,6 +514,12 @@
 .search-box .box .form .check-group .button {
   width: 100%;
   text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .search-box .box .form .check-group .button {
+    width: unset;
+  }
 }
 
 .search-box .box .form .check-group .button button {
@@ -665,10 +678,11 @@
       grid-template-columns: 20% 80%;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1199px) {
   .grid-job .grid-box .box {
     border-bottom: 1px solid #707070;
     padding-bottom: 10px;
+    height: 160px;
   }
 }
 
@@ -682,7 +696,7 @@
   margin: auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .grid-job .grid-box .box figure {
     width: 130px;
     height: 130px;
@@ -710,7 +724,7 @@
   font-size: 1.2em;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .grid-job .grid-box .box .detail .name h4 {
     font-size: 1.4em;
   }
@@ -740,7 +754,7 @@
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1199px) {
   .grid-job .grid-box .box .detail .tag .type, .grid-job .grid-box .box .detail .tag .assis, .grid-job .grid-box .box .detail .tag .wfh, .grid-job .grid-box .box .detail .tag .urgent {
     font-size: 0.6em !important;
     margin-bottom: 5px !important;

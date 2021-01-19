@@ -237,9 +237,10 @@
       display: grid;
       grid-template-columns: 20% 80%;
 
-      @media screen and (max-width:($ipadpro)-1px){
+      @media screen and (max-width:($laptop)-1px){
         border-bottom: 1px solid $dark-gray;
         padding-bottom: 10px;
+        height: 160px;
       }
 
       figure{
@@ -249,7 +250,7 @@
         display: flex;
         margin: auto;
 
-        @media screen and (min-width:($ipadpro)){
+        @media screen and (min-width:($laptop)){
           width: 130px;
           height: 130px;
         }
@@ -275,7 +276,7 @@
             overflow-y: hidden;
             font-size: 1.2em;
 
-            @media screen and (min-width:$ipadpro){
+            @media screen and (min-width:$laptop){
               font-size: 1.4em;
             }
           }
@@ -299,7 +300,7 @@
           display: flex;
           flex-wrap: wrap;
 
-          @media screen and (max-width:($ipadpro)-1px){
+          @media screen and (max-width:($laptop)-1px){
             .type,.assis,.wfh,.urgent{
               font-size: .6em!important;
               margin-bottom: 5px!important;
@@ -366,6 +367,9 @@
         margin: 1em auto;
         grid-template-columns: 49% 49%;
         grid-column-gap: 2%;
+        width: 70%;
+      }
+      @media screen and (min-width:$laptop){
         width: 50%;
       }
 
@@ -411,7 +415,7 @@
           text-align: center;
           
           @media screen and (min-width:$ipadpro){
-            
+            width: unset;
           }
 
           button{
@@ -534,9 +538,10 @@
       display: grid;
       grid-template-columns: 20% 80%;
 
-      @media screen and (max-width:($ipadpro)-1px){
+      @media screen and (max-width:($laptop)-1px){
         border-bottom: 1px solid $dark-gray;
         padding-bottom: 10px;
+        height: 160px;
       }
 
       figure{
@@ -546,7 +551,7 @@
         display: flex;
         margin: auto;
 
-        @media screen and (min-width:($ipadpro)){
+        @media screen and (min-width:($laptop)){
           width: 130px;
           height: 130px;
         }
@@ -572,7 +577,7 @@
             overflow-y: hidden;
             font-size: 1.2em;
 
-            @media screen and (min-width:$ipadpro){
+            @media screen and (min-width:$laptop){
               font-size: 1.4em;
             }
           }
@@ -596,7 +601,7 @@
           display: flex;
           flex-wrap: wrap;
 
-          @media screen and (max-width:($ipadpro)-1px){
+          @media screen and (max-width:($laptop)-1px){
             .type,.assis,.wfh,.urgent{
               font-size: .6em!important;
               margin-bottom: 5px!important;

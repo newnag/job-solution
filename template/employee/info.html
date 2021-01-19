@@ -20,41 +20,41 @@
       <div class="right">
         <ul class="menu">
           <a href="">
-            <li><i class="far fa-building"></i> บริษัททั้งหมด</li>
+            <li><i class="far fa-building"></i> All employers</li>
           </a>
           <a href="">
-            <li><i class="fas fa-home"></i> เกี่ยวกับเรา</li>
+            <li><i class="fas fa-home"></i> About us</li>
           </a>
           <a href="">
-            <li><i class="fas fa-id-card"></i> ฝากประวัติ</li>
+            <li><i class="fas fa-id-card"></i> Store resume</li>
           </a>
           <a href="">
-            <li><i class="fas fa-edit"></i> สมัครสมาชิก</li>
+            <li><i class="fas fa-edit"></i> Register</li>
           </a>
           <a href="">
-            <li><i class="fas fa-sign-in-alt"></i> เข้าสู่ระบบ</li>
+            <li><i class="fas fa-sign-in-alt"></i> Log in</li>
           </a>
           <li class="account">
-            <i class="far fa-user"></i> บัญขีของฉัน
+            <i class="far fa-user"></i> My Account
 
             <ul>
-              <a href=""><li><i class="far fa-newspaper"></i> ประวัติของฉัน</li></a>
-              <a href=""><li><i class="fas fa-sign-out-alt"></i> ออกจากระบบ</li></a>
+              <a href=""><li><i class="far fa-newspaper"></i> My History</li></a>
+              <a href=""><li><i class="fas fa-sign-out-alt"></i> Log out</li></a>
             </ul>
           </li>
 
           
           <li><i class="fas fa-globe"></i> TH</li>
         </ul>
-        <div class="company"><button class="form-component button">สำหรับบริษัท</button></div>
+        <div class="company"><button class="form-component button">For company</button></div>
         <div class="other">
           <i class="fas fa-ellipsis-v" onclick="swip_menu(this)"></i>
           <ul>
-            <a href=""><li><i class="far fa-newspaper"></i> บทความ</li></a>
-            <a href=""><li><i class="fas fa-mobile-alt"></i> ติดต่อเรา</li></a>
-            <a href=""><li><i class="fas fa-gavel"></i> เงื่อนไขการใช้บริการ</li></a>
-            <a href=""><li><i class="fas fa-fingerprint"></i> นโยบายความเป็นส่วนตัว</li></a>
-            <a href=""><li><i class="fas fa-exclamation-triangle"></i> ข้อจำกัดความรับผิดชอบ</li></a>
+            <a href=""><li><i class="far fa-newspaper"></i> Article</li></a>
+            <a href=""><li><i class="fas fa-mobile-alt"></i> Contact us</li></a>
+            <a href=""><li><i class="fas fa-gavel"></i> Terms of service</li></a>
+            <a href=""><li><i class="fas fa-fingerprint"></i> Privacy policy</li></a>
+            <a href=""><li><i class="fas fa-exclamation-triangle"></i> Disclaimer</li></a>
           </ul>
         </div>
         <div class="lang">
@@ -63,11 +63,14 @@
           <li><i class="fas fa-globe"></i> KH</li>
         </div>
       </div>
+
+      <div class="hamburger"><i class="fas fa-bars" onclick="open_mobile_navMenu()"></i></div>
     </div>
   </header>
 
   <main>
     <div class="page">
+      <div class="icon-aside" onclick="open_menu_aside()"><i class="fas fa-bars"></i></div>
       <div class="aside">
         <li><a href=""><i class="fas fa-edit"></i> ข้อมูลการสมัครสมาชิก</a></li>
         <li class="personal">
@@ -137,24 +140,23 @@
   <footer>
     <div class="footer">
       <div class="logo">
-        <img src="/img/brand/coke-logo.png" alt="">
+        <img src="/img/logo/Logowhite-07.svg" alt="">
       </div>
 
       <div class="about">
-        <h5>เกี่ยวกับเรา</h5>
+        <h5>About Us</h5>
         <div class="address">
-          <p>บริษัทวินซอฟโซลูชั่น จำกัด (สำนักงานใหญ่)</p>
-          <p>120/34-35 Moo24 Muang Khonkaen, KhonKaen 40000</p>
-          <p>เลขประจำตัวผู้เสียภาษี 0123456789</p>
+          <p>Wynnsoff Solution Co., Ltd. (Headquarters)</p>
+          <p>120/34-35 Village no.24, Meuang, Khonkaen 40000</p>
+          <p>Tax ID numbers 0123456789123</p>
         </div>
       </div>
 
       <div class="contact">
-        <h5>ติดต่อเรา</h5>
-        <p>เวลาทำการ: จันทร์-เสาร์ 8:30 - 17:30 น.</p>
-        <p>ขอความช่วยเหลือ: wynnsoft20151@gmail.com</p>
-        <p>ต้องการพื้นที่โฆษณา: wynnsoft20151@gmail.com</p>
-        <p>เบอร์โทรศัพท์: 043-002-300, 062-909-1110 (การตลาด)</p>
+        <h5>Contact</h5>
+        <p>Office hours : Monday - Saturday 08.30 am - 5.00 pm.</p>
+        <p>Advertising : wynnsoft20151@gmail.com</p>
+        <p>Phone number: 043-002-300, 062-909-1110 (Marketing)</p>
       </div>
 
       <div class="social">
@@ -170,10 +172,10 @@
     <div class="copyright">
       <div class="copyright-text">
         <p>
-          สงวนสิทธิ์ &copy; 2020 <a href="">บริษัทวินซอฟโซลูชั่น จำกัด</a>
+          CopyRight &copy; 2020 <a href="">Wynnsoff Solution Co., Ltd.</a>
         </p>
-        <a href="">เงื่อนไขตกลงการใช้งาน</a>
-        <a href="">นโยบายความเป็นส่วนตัว</a>
+        <a href="">Terms of service</a>
+        <a href="">Privacy policy</a>
       </div>
     </div>
   </footer>
