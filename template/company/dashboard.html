@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Solution</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/37e3c13129.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="/css/job.min.css">
+  <link rel="stylesheet" href="/css/company.min.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="left"><a href=""><img src="/img/logo/Logowhite-07.svg" alt=""></a></div>
+      <div class="right">
+        <ul class="menu">
+          <a href="">
+            <li><i class="far fa-building"></i> All employers</li>
+          </a>
+          <a href="">
+            <li><i class="fas fa-home"></i> About us</li>
+          </a>
+          <a href="">
+            <li><i class="fas fa-id-card"></i> Store resume</li>
+          </a>
+          <a href="">
+            <li><i class="fas fa-edit"></i> Register</li>
+          </a>
+          <a href="">
+            <li><i class="fas fa-sign-in-alt"></i> Log in</li>
+          </a>
+          <li class="account">
+            <i class="far fa-user"></i> My Account
+
+            <ul>
+              <a href=""><li><i class="far fa-newspaper"></i> My History</li></a>
+              <a href=""><li><i class="fas fa-sign-out-alt"></i> Log out</li></a>
+            </ul>
+          </li>
+
+          
+          <li><i class="fas fa-globe"></i> TH</li>
+        </ul>
+        <div class="company"><button class="form-component button">For company</button></div>
+        <div class="other">
+          <i class="fas fa-ellipsis-v" onclick="swip_menu(this)"></i>
+          <ul>
+            <a href=""><li><i class="far fa-newspaper"></i> Article</li></a>
+            <a href=""><li><i class="fas fa-mobile-alt"></i> Contact us</li></a>
+            <a href=""><li><i class="fas fa-gavel"></i> Terms of service</li></a>
+            <a href=""><li><i class="fas fa-fingerprint"></i> Privacy policy</li></a>
+            <a href=""><li><i class="fas fa-exclamation-triangle"></i> Disclaimer</li></a>
+          </ul>
+        </div>
+        <div class="lang">
+          <li><i class="fas fa-globe"></i> TH</li>
+          <li><i class="fas fa-globe"></i> EN</li>
+          <li><i class="fas fa-globe"></i> KH</li>
+        </div>
+      </div>
+
+      <div class="hamburger"><i class="fas fa-bars" onclick="open_mobile_navMenu()"></i></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page">
+      <div class="icon-aside" onclick="open_menu_aside()"><i class="fas fa-bars"></i></div>
+      <div class="aside">
+        <li><a href=""><i class="fas fa-edit"></i> ข้อมูลบริษัท</a></li>
+        <li><a href=""><i class="fas fa-edit"></i> ค้นหาประวัติ</a></li>
+        <li><a href=""><i class="fas fa-edit"></i> ใบสมัคร</a></li>
+        <li><a href=""><i class="fas fa-edit"></i> ประวัติที่สนใจ</a></li>
+        <li><a href=""><i class="fas fa-edit"></i> ประกาศงาน</a></li>
+        <li><a href=""><i class="fas fa-edit"></i> แจ้งผิดนัดสัมภาษณ์</a></li>
+        <li><a href=""><i class="fas fa-briefcase"></i> แพ็คเกจลงประกาศงาน/โฆษณา</a></li>
+      </div>
+
+      <div class="main-content">
+        <div class="head-title">
+          <h1>ข้อมูลบริษัท</h1>
+          <p>กรุณากรอกข้อมูลให้ครบถ้วน</p>
+        </div>
+
+        <div class="dashboard">
+          <div class="mini-detail">
+            <div class="member">
+              <p>รหัสสมาชิก: <span>123456</span></p>
+              <p>งานที่ประกาศอยู่ตอนนี้: <span>2</span></p>
+            </div>
+  
+            <div class="preview">
+              <button class="form-component button">กดเพื่อแสดงตัวอย่าง</button>
+            </div>
+          </div>
+
+          <form action="">
+            <div class="row">
+              <div class="input-box">
+                <label for="">ชื่อผู้ติดต่อ</label>
+                <input type="text" class="form-component input">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-box">
+                <label for="">ชื่อบริษัท</label>
+                <input type="text" class="form-component input">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-box">
+                <label for="">เลขผู้เสียภาษี</label>
+                <input type="number" class="form-component input">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-box">
+                <label for="">รายละเอียดเกี่ยวกับบริษัท</label>
+                <textarea name="" id="" class="form-component input" cols="30" rows="6"></textarea>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-box">
+                <label for="">สวัสดิการ</label>
+                <input type="text" class="form-component input">
+              </div>
+            </div>
+
+            <div class="address">
+              <div class="row">
+                <div class="input-box">
+                  <label for="">ที่อยู่บริษัท</label>
+                  <input type="text" class="form-component input">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-box">
+                  <label for="">แขวง/ตำบล</label>
+                  <select name="" id="" class="form-component select">
+                    <option value="">ศิลา</option>
+                    <option value="">ศิลา</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-box">
+                  <label for="">เขต/อำเภอ</label>
+                  <select name="" id="" class="form-component select">
+                    <option value="">ศิลา</option>
+                    <option value="">ศิลา</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-box">
+                  <label for="">จังหวัด</label>
+                  <select name="" id="" class="form-component select">
+                    <option value="">ขอนแก่น</option>
+                    <option value="">ขอนแก่น</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-box">
+                  <label for="">รหัสไปรษณีย์</label>
+                  <input type="tel" class="form-component input">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-box">
+                <label for="">Tel</label>
+                <input type="tel" class="form-component input">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-box">
+                <label for="">Email</label>
+                <input type="email" class="form-component input">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-box">
+                <label for="">Website</label>
+                <input type="text" class="form-component input">
+              </div>
+            </div>
+
+          </form>
+
+          <div class="simple-file">
+            <span>ดูตัวอย่างไฟล์บริษัท</span>
+            <span><a href="">กดดู</a></span>
+          </div>
+
+          <div class="box-logo">
+            <div class="logo">
+              <figure><img src="/img/default.jpg" alt=""></figure>
+              <p>โลโก้บริษัท</p>
+              <div class="button"><button class="form-component button">Choose File</button></div>
+              <p class="ps">
+                อัพโหลดได้เฉพาะไฟล์รูปภาพประเภท jpg png gif ขนาดไม่เกิน 3Mb
+              </p>
+            </div>
+
+            <div class="banner">
+              <figure><img src="/img/EBAEC24-DBE7805-F7068F8.png" alt=""></figure>
+              <p>แบนเนอร์บริษัท</p>
+              <div class="button"><button class="form-component button">Choose File</button></div>
+              <p class="ps">
+                อัพโหลดได้เฉพาะไฟล์รูปภาพประเภท jpg png gif ขนาดไม่เกิน 3Mb
+              </p>
+            </div>
+          </div>
+
+          <div class="map">
+            <div class="row">
+              <div class="input-box">
+                <label for="">กรอก url สถานที่ตั้งบริษัทจาก google map</label>
+                <textarea name="" id="" class="form-component input" cols="30" rows="6"></textarea>
+              </div>
+            </div>
+
+            <div class="show-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1608.541813957037!2d102.83525238727184!3d16.486737568704402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x56b4538d2ace7037!2sWYNNSOFT%20SOLUTION%20CO%2CLTD.!5e0!3m2!1sth!2sth!4v1611117171456!5m2!1sth!2sth" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+
+          <div class="submit-button">
+            <button class="form-component button">Save</button>
+            <button class="form-component button pass">Change Password</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="footer">
+      <div class="logo">
+        <img src="/img/logo/Logowhite-07.svg" alt="">
+      </div>
+
+      <div class="about">
+        <h5>About Us</h5>
+        <div class="address">
+          <p>Wynnsoff Solution Co., Ltd. (Headquarters)</p>
+          <p>120/34-35 Village no.24, Meuang, Khonkaen 40000</p>
+          <p>Tax ID numbers 0123456789123</p>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h5>Contact</h5>
+        <p>Office hours : Monday - Saturday 08.30 am - 5.00 pm.</p>
+        <p>Advertising : wynnsoft20151@gmail.com</p>
+        <p>Phone number: 043-002-300, 062-909-1110 (Marketing)</p>
+      </div>
+
+      <div class="social">
+        <h5>Social Networks</h5>
+        <div class="list">
+          <a href=""><div class="facebook"><i class="fab fa-facebook-square"></i><span>Like us on Facebook</span></div></a>
+          <a href=""><div class="twitter"><i class="fab fa-twitter-square"></i><span>Follow us on Twitter</span></div></a>
+          <a href=""><div class="instagram"><i class="fab fa-instagram"></i><span>Follow us on Instagram</span></div></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="copyright-text">
+        <p>
+          CopyRight &copy; 2020 <a href="">Wynnsoff Solution Co., Ltd.</a>
+        </p>
+        <a href="">Terms of service</a>
+        <a href="">Privacy policy</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

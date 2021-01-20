@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Solution</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/37e3c13129.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="/css/job.min.css">
+  <link rel="stylesheet" href="/css/profile.min.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="left"><a href=""><img src="/img/logo/Logowhite-07.svg" alt=""></a></div>
+      <div class="right">
+        <ul class="menu">
+          <a href="">
+            <li><i class="far fa-building"></i> All employers</li>
+          </a>
+          <a href="">
+            <li><i class="fas fa-home"></i> About us</li>
+          </a>
+          <a href="">
+            <li><i class="fas fa-id-card"></i> Store resume</li>
+          </a>
+          <a href="">
+            <li><i class="fas fa-edit"></i> Register</li>
+          </a>
+          <a href="">
+            <li><i class="fas fa-sign-in-alt"></i> Log in</li>
+          </a>
+          <li class="account">
+            <i class="far fa-user"></i> My Account
+
+            <ul>
+              <a href=""><li><i class="far fa-newspaper"></i> My History</li></a>
+              <a href=""><li><i class="fas fa-sign-out-alt"></i> Log out</li></a>
+            </ul>
+          </li>
+
+          
+          <li><i class="fas fa-globe"></i> TH</li>
+        </ul>
+        <div class="company"><button class="form-component button">For company</button></div>
+        <div class="other">
+          <i class="fas fa-ellipsis-v" onclick="swip_menu(this)"></i>
+          <ul>
+            <a href=""><li><i class="far fa-newspaper"></i> Article</li></a>
+            <a href=""><li><i class="fas fa-mobile-alt"></i> Contact us</li></a>
+            <a href=""><li><i class="fas fa-gavel"></i> Terms of service</li></a>
+            <a href=""><li><i class="fas fa-fingerprint"></i> Privacy policy</li></a>
+            <a href=""><li><i class="fas fa-exclamation-triangle"></i> Disclaimer</li></a>
+          </ul>
+        </div>
+        <div class="lang">
+          <li><i class="fas fa-globe"></i> TH</li>
+          <li><i class="fas fa-globe"></i> EN</li>
+          <li><i class="fas fa-globe"></i> KH</li>
+        </div>
+      </div>
+
+      <div class="hamburger"><i class="fas fa-bars" onclick="open_mobile_navMenu()"></i></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page">
+      <div class="main-content">
+        <div class="profile">
+          <div class="box-name">
+            <figure><img src="/img/00.jpg" alt=""></figure>
+            <div class="name"><h1>สมชาย กล้าหาญ</h1></div>
+
+            <div class="box-social">
+              <div class="box">
+                <i class="far fa-heart"></i>
+                <span>favoritert</span>
+              </div>
+
+              <div class="box">
+                <i class="far fa-user"></i>
+                <span>รหัสสมาชิก: 123456</span>
+              </div>
+
+              <div class="box">
+                <i class="fas fa-mobile-alt"></i>
+                <span>เบอร์โทร: 0123456789</span>
+              </div>
+
+              <div class="box">
+                <i class="fas fa-envelope"></i>
+                <span>Email: mail8@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="see-profile">
+              <i class="far fa-file-pdf"></i>
+              <span>ดูโปรไฟล์</span>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="detail-box personal">
+              <div class="title"><h2>ข้อมูลส่วนตัว</h2></div>
+
+              <div class="data">
+                <div class="grid">
+                  <div class="row">
+                    <p>วันเดือนปีเกิด:</p>
+                    <p>09 มิถุนายน 2560</p>
+                  </div>
+                  <div class="row">
+                    <p>อายุ:</p>
+                    <p>1 ปี</p>
+                  </div>
+                  <div class="row">
+                    <p>ส่วนสูง:</p>
+                    <p>170 ซม.</p>
+                  </div>
+                  <div class="row">
+                    <p>น้ำหนัก:</p>
+                    <p>75 กก.</p>
+                  </div>
+                  <div class="row">
+                    <p>เพศ:</p>
+                    <p>ชาย</p>
+                  </div>
+                </div>
+                <div class="grid">
+                  <div class="row">
+                    <p>สถานภาพสมรส:</p>
+                    <p>โสด</p>
+                  </div>
+                  <div class="row">
+                    <p>สัญชาติ:</p>
+                    <p>ไทย</p>
+                  </div>
+                  <div class="row">
+                    <p>ศาสนา:</p>
+                    <p>พุทธ</p>
+                  </div>
+                  <div class="row">
+                    <p>สถานภาพทางทหาร:</p>
+                    <p>ผ่านการเกณฑ์ทหาร</p>
+                  </div>
+                </div>
+                <div class="address">
+                  <label for="">ที่อยู่บ้านปัจจุบัน</label>
+                  <p>
+                    120/34-35 บ้านศิลา อำเภอเมือง ขอนแก่น 40000
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="detail-box position">
+              <div class="title"><h2>ลักษณะงานที่ต้องการ</h2></div>
+
+              <div class="data">
+                <div class="grid">
+                  <div class="row">
+                    <p>ตำแหน่งที่ต้องการ 1:</p>
+                    <p>กราฟิค</p>
+                  </div>
+                  <div class="row">
+                    <p>ตำแหน่งที่ต้องการ 2:</p>
+                    <p>ออกแบบ</p>
+                  </div>
+                  <div class="row">
+                    <p>ประเภทงาน:</p>
+                    <p>ศิลป / ออกแบบ / กราฟฟิค</p>
+                  </div>
+                </div>
+                <div class="grid">
+                  <div class="row">
+                    <p>ระยะเวลาการทำงาน:</p>
+                    <p>ประจำ</p>
+                  </div>
+                  <div class="row">
+                    <p>เงินเดือนที่ต้องการ:</p>
+                    <p>80000</p>
+                  </div>
+                  <div class="row">
+                    <p>สถานที่ต้องการทำงาน:</p>
+                    <p>ขอนแก่น,สารคาม</p>
+                  </div>
+                </div>
+                <div class="insure">
+                  <p>"ไม่สนใจงานขายประกัน"</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-box education">
+              <div class="title"><h2>ประวัติการศึกษา</h2></div>
+
+              <div class="list">
+                <div class="data">
+                  <div class="bg-title">
+                    <p>มหาวิทยาลัยสารคาม</p>
+                    <p>2560</p>
+                  </div>
+                  <div class="grid">
+                    <div class="row">
+                      <p>ระดับการศึกษา:</p>
+                      <p>ปรีญญาตรี</p>
+                    </div>
+                    <div class="row">
+                      <p>คณะ:</p>
+                      <p>เทคโนโลยีสารสนเทศ</p>
+                    </div>
+                  </div>
+                  <div class="grid">
+                    <div class="row">
+                      <p>วุฒิการศึกษา:</p>
+                      <p>วิทยาศาสบัณฑิต</p>
+                    </div>
+                    <div class="row">
+                      <p>เกรดเฉลี่ย:</p>
+                      <p>5.00</p>
+                    </div>
+                  </div>
+                  <div class="studing">
+                    <p>"กำลังศึกษาอยู่"</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="data">
+                  <div class="bg-title">
+                    <p>มหาวิทยาลัยขอนแก่น</p>
+                    <p>2559</p>
+                  </div>
+                  <div class="grid">
+                    <div class="row">
+                      <p>ระดับการศึกษา:</p>
+                      <p>ปรีญญาตรี</p>
+                    </div>
+                    <div class="row">
+                      <p>คณะ:</p>
+                      <p>เทคโนโลยีสารสนเทศ</p>
+                    </div>
+                  </div>
+                  <div class="grid">
+                    <div class="row">
+                      <p>วุฒิการศึกษา:</p>
+                      <p>วิทยาศาสบัณฑิต</p>
+                    </div>
+                    <div class="row">
+                      <p>เกรดเฉลี่ย:</p>
+                      <p>5.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="data">
+                  <div class="bg-title">
+                    <p>เทคนิคขอนแก่น</p>
+                    <p>2558</p>
+                  </div>
+                  <div class="grid">
+                    <div class="row">
+                      <p>ระดับการศึกษา:</p>
+                      <p>ปรีญญาตรี</p>
+                    </div>
+                    <div class="row">
+                      <p>คณะ:</p>
+                      <p>เทคโนโลยีสารสนเทศ</p>
+                    </div>
+                  </div>
+                  <div class="grid">
+                    <div class="row">
+                      <p>วุฒิการศึกษา:</p>
+                      <p>วิทยาศาสบัณฑิต</p>
+                    </div>
+                    <div class="row">
+                      <p>เกรดเฉลี่ย:</p>
+                      <p>5.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="detail-box job-history">
+              <div class="title"><h2>ประวัติการทำงาน</h2></div>
+
+              <div class="list">
+                <div class="data">
+                  <div class="bg-title">
+                    <p>Wynnsoft Solution</p>
+                    <p>มี.ค. 2562 - ปัจจุบัน</p>
+                  </div>
+                  <div class="grid">
+                    <div class="row">
+                      <p>ตำแหน่ง:</p>
+                      <p>ออกแบบ</p>
+                    </div>
+                    <div class="row">
+                      <p>ระดับ:</p>
+                      <p>เจ้าหน้าที่</p>
+                    </div>
+                  </div>
+                  <div class="grid">
+                    <div class="row">
+                      <p>เงินเดือน:</p>
+                      <p>500</p>
+                    </div>
+                  </div>
+                  <div class="address">
+                    <label for="">ที่อยู่ติดต่อ</label>
+                    <p>120/34-35 บ้านศิลา อำเภอเมือง ขอนแก่น 40000</p>
+                  </div>
+                  <div class="response">
+                    <label for="">หน้าที่ความรับผิดชอบ</label>
+                    <p>ออกแบบเว็บไซต์ เขียนการ์ตูน เกม ทำหนัง ทำคลิปวิดีโอ ซ่อมนู่นนี่ ทำหมดทุกอย่าง</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="data">
+                  <div class="bg-title">
+                    <p>Wynnsoft Solution</p>
+                    <p>มี.ค. 2562 - เม.ย. 2562</p>
+                  </div>
+                  <div class="grid">
+                    <div class="row">
+                      <p>ตำแหน่ง:</p>
+                      <p>ออกแบบ</p>
+                    </div>
+                    <div class="row">
+                      <p>ระดับ:</p>
+                      <p>เจ้าหน้าที่</p>
+                    </div>
+                  </div>
+                  <div class="grid">
+                    <div class="row">
+                      <p>เงินเดือน:</p>
+                      <p>500</p>
+                    </div>
+                  </div>
+                  <div class="address">
+                    <label for="">ที่อยู่ติดต่อ</label>
+                    <p>120/34-35 บ้านศิลา อำเภอเมือง ขอนแก่น 40000</p>
+                  </div>
+                  <div class="response">
+                    <label for="">หน้าที่ความรับผิดชอบ</label>
+                    <p>ออกแบบเว็บไซต์ เขียนการ์ตูน เกม ทำหนัง ทำคลิปวิดีโอ ซ่อมนู่นนี่ ทำหมดทุกอย่าง</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="list">
+                <div class="data">
+                  <div class="bg-title">
+                    <p>Wynnsoft Solution</p>
+                    <p>มี.ค. 2562 - เม.ย. 2562</p>
+                  </div>
+                  <div class="grid">
+                    <div class="row">
+                      <p>ตำแหน่ง:</p>
+                      <p>ออกแบบ</p>
+                    </div>
+                    <div class="row">
+                      <p>ระดับ:</p>
+                      <p>เจ้าหน้าที่</p>
+                    </div>
+                  </div>
+                  <div class="grid">
+                    <div class="row">
+                      <p>เงินเดือน:</p>
+                      <p>500</p>
+                    </div>
+                  </div>
+                  <div class="address">
+                    <label for="">ที่อยู่ติดต่อ</label>
+                    <p>120/34-35 บ้านศิลา อำเภอเมือง ขอนแก่น 40000</p>
+                  </div>
+                  <div class="response">
+                    <label for="">หน้าที่ความรับผิดชอบ</label>
+                    <p>ออกแบบเว็บไซต์ เขียนการ์ตูน เกม ทำหนัง ทำคลิปวิดีโอ ซ่อมนู่นนี่ ทำหมดทุกอย่าง</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-box cer">
+              <div class="title"><h2>ประวัติการฝึกอบรม</h2></div>
+
+              <div class="list">
+                <div class="data">
+                  <div class="bg-title">
+                    <p>การฝึกอบรมเชื่อมไม้เข้าสู่ต้นไม้โดยใช้แก๊สน้ำตา และเครื่องพ่นฉีดน้ำ</p>
+                    <p>มี.ค. 2562 - ก.ค. 2562</p>
+                  </div>
+                  <div class="grid">
+                    <div class="row">
+                      <p>หลักสูตร:</p>
+                      <p>ประกวดผลงานวิชาการ</p>
+                    </div>
+                    <div class="row">
+                      <p>ประกาศนียบัตร:</p>
+                      <p>AUC 2</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-box skill-person">
+              <div class="title"><h2>ความสามารถ</h2></div>
+
+              <div class="data">
+                <div class="grid">
+                  <div class="row">
+                    <p>ภาษา:</p>
+                    <p>ไทย</p>
+                  </div>
+                  <div class="row">
+                    <p>พูด:</p>
+                    <p>ดี</p>
+                  </div>
+                  <div class="row">
+                    <p>อ่าน:</p>
+                    <p>ดี</p>
+                  </div>
+                  <div class="row">
+                    <p>เขียน:</p>
+                    <p>ดี</p>
+                  </div>
+                </div>
+                <div class="grid">
+                  <div class="row">
+                    <p>ภาษา:</p>
+                    <p>อังกฤษ</p>
+                  </div>
+                  <div class="row">
+                    <p>พูด:</p>
+                    <p>ดี</p>
+                  </div>
+                  <div class="row">
+                    <p>อ่าน:</p>
+                    <p>ดี</p>
+                  </div>
+                  <div class="row">
+                    <p>เขียน:</p>
+                    <p>ดี</p>
+                  </div>
+                </div>
+                <div class="grid">
+                  <div class="row">
+                    <p>พิมพ์ดีดไทย (นาที/คำ):</p>
+                    <p>60</p>
+                  </div>
+                  <div class="row">
+                    <p>พิมพ์ดีดอังกฤษ (นาที/คำ):</p>
+                    <p>60</p>
+                  </div>
+                 
+                </div>
+                <div class="skill drive">
+                  <label for="">ความสามารถในการขับขี่</label>
+                  <p>
+                    รถยนต์,รถบรรทุก,รถกระบะ,รถเก๋ง,รถไฟ,รถนู่นนี่
+                  </p>
+                </div>
+                <div class="skill car">
+                  <label for="">พาหนะส่วนตัว</label>
+                  <p>
+                    รถยนต์,รถบรรทุก,รถกระบะ,รถเก๋ง,รถไฟ,รถนู่นนี่
+                  </p>
+                </div>
+                <div class="skill other-skill">
+                  <label for="">ความสามารถอื่นๆ</label>
+                  <p>
+                    ซ่อมคอม,ซ่อมคอม,ซ่อมคอม,ซ่อมคอม,ซ่อมคอม,ซ่อมคอม,
+                    ซ่อมคอม,ซ่อมคอม,ซ่อมคอม,ซ่อมคอม,ซ่อมคอม,ซ่อมคอม
+                  </p>
+                </div>
+                <div class="skill project">
+                  <label for="">โครงการ ผลงาน</label>
+                  <p>
+                    ซ่อมคอม,ซ่อมคอม,ซ่อมคอม,ซ่อมคอม,ซ่อมคอม,ซ่อมคอม,
+                    ซ่อมคอม,ซ่อมคอม,ซ่อมคอม,ซ่อมคอม,ซ่อมคอม,ซ่อมคอม
+                  </p>
+                </div>
+                <div class="skill ref-people">
+                  <label for="">บุคคลอ้างอิง</label>
+                  <p>
+                    นายสมชาย ชายชาย 08765432110
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="footer">
+      <div class="logo">
+        <img src="/img/logo/Logowhite-07.svg" alt="">
+      </div>
+
+      <div class="about">
+        <h5>About Us</h5>
+        <div class="address">
+          <p>Wynnsoff Solution Co., Ltd. (Headquarters)</p>
+          <p>120/34-35 Village no.24, Meuang, Khonkaen 40000</p>
+          <p>Tax ID numbers 0123456789123</p>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h5>Contact</h5>
+        <p>Office hours : Monday - Saturday 08.30 am - 5.00 pm.</p>
+        <p>Advertising : wynnsoft20151@gmail.com</p>
+        <p>Phone number: 043-002-300, 062-909-1110 (Marketing)</p>
+      </div>
+
+      <div class="social">
+        <h5>Social Networks</h5>
+        <div class="list">
+          <a href=""><div class="facebook"><i class="fab fa-facebook-square"></i><span>Like us on Facebook</span></div></a>
+          <a href=""><div class="twitter"><i class="fab fa-twitter-square"></i><span>Follow us on Twitter</span></div></a>
+          <a href=""><div class="instagram"><i class="fab fa-instagram"></i><span>Follow us on Instagram</span></div></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="copyright-text">
+        <p>
+          CopyRight &copy; 2020 <a href="">Wynnsoff Solution Co., Ltd.</a>
+        </p>
+        <a href="">Terms of service</a>
+        <a href="">Privacy policy</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

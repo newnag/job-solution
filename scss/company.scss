@@ -1,0 +1,700 @@
+@import 'variable';
+
+.page{
+  max-width: 1364px;
+  margin: 3em auto;
+  display: grid;
+  grid-template-columns: 27% 68%;
+  grid-column-gap: 5%;
+
+  @media screen and (max-width:($tablet)-1px){
+    grid-template-columns: 100%;
+    max-width: 95%;
+  }
+  @media screen and (min-width:$tablet) and (max-width:($laptop)-1px){
+    max-width: 95%;
+  }
+
+  .icon-aside{
+    @media screen and (min-width:$tablet){
+      display: none;
+    }
+
+    @media screen and (max-width:($tablet)-1px){
+      position: fixed;
+      top: 9%;
+      right: 0;
+      background: $white;
+      padding: 5px;
+      border: 1px solid $light-gray;
+      border-right: none;
+      border-radius: 5px 0 0 5px;
+      cursor: pointer;
+      display: flex;
+      transition: .3s;
+
+      &.show{
+        right: 83%;
+        transition: .3s;
+      }
+    }
+  }
+
+  .aside{
+    @media screen and (max-width:($tablet)-1px){
+      position: fixed;
+      top: 9%;
+      right: -100%;
+      transition: .3s;
+
+      &.show{
+        right: 0;
+        transition: .3s;
+      }
+    }
+
+    background: url(/img/bg-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em;
+    height: max-content;
+    width: 83%;
+    
+    @media screen and (min-width:$tablet){
+      width: 100%;
+    }
+    @media screen and (min-width:$laptop){
+      margin-top: 6em;
+    }
+
+    li{
+      margin: 1em 0;
+      color: $white;
+
+      i{
+        margin-right: 5px;
+      }
+    }
+    .personal{
+      cursor: pointer;
+
+      ul{
+        padding-left: 3em;
+
+        @media screen and (min-width:$tablet) and (max-width:($ipadpro)-1px){
+          padding-left: 0;
+        }
+
+        li{
+          font-size: .9em;
+
+          &:before{
+            content: '-';
+            margin-right: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  .pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+
+    li{
+      display: inline-block;
+      margin: 0 .5em;
+      color: $dark-blue;
+
+      &.active{
+        color: $sky;
+      }
+      &.disable{
+        color: inherit;
+
+        a{cursor: default;}
+
+        &:hover{
+          color: inherit;
+        }
+      }
+
+      &:hover{
+        color: $sky;
+      }
+    }
+  }
+
+  .main-content{
+    .head-title{
+      margin-bottom: 2em;
+
+      h1{
+        color: $blue;
+      }
+    }
+
+    .dashboard{
+      .mini-detail{
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width:$tablet){
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: space-between;
+        }
+
+        .member{
+          margin-bottom: 1em;
+
+          p{
+            color: $black;
+          }
+        }
+        .preview{
+          text-align: center;
+
+          button{
+            background: $blue;
+            color: $white;
+            cursor: pointer;
+          }
+        }
+      }
+
+      form{
+        margin: 1em 0;
+
+        .row{
+          margin-bottom: .5em;
+
+          .input-box{
+            label{
+              color: $black;
+            }
+          }
+        }
+        .address{
+          background: #e9e9e9;
+          padding: 10px;
+          border-radius: 5px;
+          margin-bottom: .5em;
+
+          @media screen and (min-width:$ipadpro){
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-column-gap: 1em;
+          }
+
+          .row{
+            @media screen and (min-width:$ipadpro){
+              &:nth-child(1){
+                grid-column: 1/5;
+              }
+            }
+            @media screen and (min-width:$laptop){
+              &:nth-child(1){
+                grid-column: 1/3;
+              }
+            }
+          }
+        }
+      }
+
+      .simple-file{
+        margin: 1em 0;
+
+        span:first-child{
+          color: $sky;
+          font-size: 1.2em;
+        }
+        span:last-child{
+          color: $gold;
+          font-size: 1.2em;
+        }
+      }
+
+      .box-logo{
+        background: #e9e9e9;
+        padding: 15px;
+
+        @media screen and (min-width:$tablet){
+          display: grid;
+          grid-template-columns: 48% 48%;
+          grid-column-gap: 4%;
+        }
+
+        .logo{
+          text-align: center;
+          margin-bottom: 1em;
+
+          figure{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+              width: 200px;
+              height: 200px;
+              border: 1px solid #f6f6f6;
+
+              @media screen and (min-width:$tablet){
+                width: 150px;
+                height: 150px;
+              }
+            }
+          }
+
+          p{
+            margin: .5em 0;
+            color: $black;
+          }
+
+          .button{
+            text-align: center;
+
+            button{
+              background: $blue;
+              color: $white;
+            }
+          }
+
+          .ps{
+            font-size: .8em;
+            color: $light-gray;
+            width: 50%;
+            margin: .5em auto;
+          }
+        }
+        .banner{
+          text-align: center;
+
+          figure{
+            display: flex;
+            img{
+              height: 150px;
+              object-fit: cover;
+            }
+          }
+
+          p{
+            margin: .5em 0;
+            color: $black;
+          }
+
+          .button{
+            text-align: center;
+
+            button{
+              background: $blue;
+              color: $white;
+            }
+          }
+
+          .ps{
+            font-size: .8em;
+            color: $light-gray;
+            width: 50%;
+            margin: .5em auto;
+          }
+        }
+      }
+
+      .map{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 2em;
+        margin-top: 3em;
+
+        .show-map{
+          iframe{
+            width: 100%!important;
+            height: 300px!important;
+          }
+        }
+      }
+
+      .submit-button{
+        margin: 1em 0;
+        text-align: center;
+
+        button{
+          background: $blue;
+          color: $white;
+          padding: 5px 10px;
+        }
+        .pass{
+          background: $dark-gray;
+        }
+      }
+    }
+
+    .search-profile{
+      @media screen and (min-width:$ipadpro){
+        min-height: 870px;
+      }
+      @media screen and (min-width:$laptop){
+        min-height: 460px;
+      }
+
+      .search-box{
+        @media screen and (max-width:($ipadpro)-1px){
+          background: linear-gradient(to left, $sky,$dark-blue);
+          border-radius: 20px 20px 0 0;
+        }
+        
+        @media screen and (min-width:$ipadpro){
+          background: url(/img/bg-01.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      
+        .box{
+          padding: 1em;
+      
+          h2{
+            text-align: center;
+            color: $white;
+          }
+      
+          .form{
+            display: grid;
+            grid-row-gap: .5em;
+            grid-template-columns: 100%;
+            
+            @media screen and (min-width:$tablet){
+              margin: 1em auto;
+              grid-template-columns: 49% 49%;
+              grid-column-gap: 2%;
+            }
+            @media screen and (min-width:$ipadpro){
+              
+            }
+            @media screen and (min-width:$laptop){
+              width: 80%;
+            }
+      
+            .input{
+              width: 100%;
+      
+              @media screen and (min-width:$ipadpro){
+                grid-column: 1/3;
+              }
+            }
+      
+            .input-box{
+              display: flex;
+              flex-direction: column;
+      
+              label{
+                color: $white;
+              }
+
+              &:first-child{
+                @media screen and (min-width:$ipadpro){
+                  grid-column: 1/3;
+                }
+              }
+            }
+      
+            .check-group{
+              @media screen and (min-width:$tablet) and (max-width:($ipadpro)-1px){
+                grid-column: 1/3;
+              }
+              @media screen and (max-width:($ipadpro)-1px){
+                display: grid;
+                grid-template-columns: 100%;
+                grid-row-gap: 5px;
+              }
+      
+              @media screen and (min-width:$ipadpro){
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                //grid-column: 1/3;
+              }
+      
+              .checkbox{
+                label{
+                  color: $white;
+                }
+              }
+      
+              .button{
+                width: 100%;
+                text-align: center;
+                
+                @media screen and (min-width:$ipadpro){
+                  width: unset;
+                }
+      
+                button{
+                  width: 120px;
+                  background: $blue;
+                  color: $white;
+                  transition: .3s;
+      
+                  @media (hover:hover){
+                    &:hover{
+                      background: $white;
+                      color: $blue;
+                      transition: .3s;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .category-edu{
+        margin-top: 1em;
+
+        h3{
+          margin-bottom: .5em;
+        }
+
+        ul{
+          li{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: .5em;
+            border-bottom: 1px dashed $light-gray;
+
+            span{
+              color: $sky;
+            }
+          }
+        }
+      }
+
+      .grid-profile{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 1em;
+        margin: 2em 0;
+    
+        @media screen and (min-width:$tablet){
+          grid-template-columns: repeat(2,1fr);
+          grid-column-gap: 3%;
+          grid-row-gap: 2em;
+        }
+    
+        .box{
+          display: grid;
+          grid-template-columns: 30% 70%;
+    
+          @media screen and (max-width:($laptop)-1px){
+            border-bottom: 1px solid $dark-gray;
+            padding-bottom: 10px;
+            height: 160px;
+          }
+    
+          figure{
+            display: flex;
+            margin: auto;
+
+            img{
+              height: 100px;
+
+              @media screen and (min-width:($laptop)){
+                height: 130px;
+              }
+            }
+          }
+    
+          .detail{
+            margin-left: .5em;
+    
+            .name{
+              h4{
+                color: $sky;
+                font-weight: lighter;
+                height: 1.6em;
+                overflow-y: hidden;
+                font-size: 1.2em;
+    
+                @media screen and (min-width:$laptop){
+                  font-size: 1.4em;
+                }
+              }
+            }
+            .edu{
+              span{
+                height: 1.6em;
+                overflow-y: hidden;
+              }
+              
+            }
+            .address{
+              font-size: .8em;
+              height: 1.6em;
+              overflow-y: hidden;
+    
+              i{
+                margin-right: 5px;
+              }
+            }
+            .salary{
+              i{
+                margin-right: 5px;
+              }
+              span{
+                color: $green;
+                height: 1.6em;
+                overflow-y: hidden;
+              }
+            }
+            .position{
+              i{
+                margin-right: 5px;
+              }
+              span{
+                height: 1.6em;
+                overflow-y: hidden;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .job-application{
+      .checkbox{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 1em;
+
+        @media screen and (min-width:$ipadpro){
+          grid-template-columns: 60% 40%;
+          align-items: flex-end;
+        }
+
+        .left{
+          @media screen and (min-width:$ipadpro){
+            display: flex;
+            align-items: flex-end;
+          }
+
+          .check{
+            @media screen and (min-width:$ipadpro){
+              margin-right: 15px;
+            }
+          }
+        }
+
+        .right{
+          .group-button{
+            button{
+              background: $blue;
+              color: $white;
+              padding: 5px 10px;
+
+              &.delete{
+                background: $gold;
+              }
+            }
+          }
+        }
+      }
+
+      .box-job-application{
+        background: linear-gradient($sky,$blue);
+        padding: 2em 1em;
+        margin-top: 3em;
+
+        .box-grid{
+          display: grid;
+          grid-template-columns: 100%;
+          grid-row-gap: 1em;
+          overflow-x: scroll;
+
+          @media screen and (min-width:$laptop){
+            overflow-x: unset;
+          }
+
+          .list{
+            display: grid;
+            grid-template-columns: 8% 23% 40% 20% 55% 40% 25% 30% 35%;
+            grid-auto-columns: auto;
+
+            @media screen and (min-width:$tablet){
+              grid-template-columns: 6% 15% 35% 12% 40% 25% 16% 19% 22%;
+            }
+            @media screen and (min-width:$ipadpro){
+              grid-template-columns: 5% 10% 27% 10% 28% 18% 11% 13% 16%;
+            }
+            @media screen and (min-width:$laptop){
+              grid-template-columns: 3% 7% 17% 6% 24% 13% 8% 10% 12%;
+            }
+
+            .td{
+              padding: 3px 8px;
+              background: $white;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+
+              figure.round{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img{
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50px;
+                  cursor: pointer;
+                }
+              }
+
+              p:first-child{
+                font-size: .9em;
+                color: $light-gray;
+              }
+              p:last-child{
+                height: 1.8em;
+                overflow: hidden;
+              }
+
+              &:first-child{
+                border-radius: 5px 0 0 5px;
+              }
+              &:last-child{
+                border-radius: 0 5px 5px 0;
+              }
+            }
+            .sex{
+              .male{
+                color: $sky;
+              }
+              .female{
+                color: #f08395;
+              }
+            }
+            .action-red{
+              button{
+                background: $red;
+                color: $white;
+                font-size: .8em;
+                width: 65px;
+              }
+            }
+            .check-read{
+              .read{
+                color: $sky;
+              }
+              .unread{
+                color: $gold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
