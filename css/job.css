@@ -93,9 +93,17 @@ img {
   border: 1px solid #8B8B8B;
   border-radius: 5px;
   padding: 5px 10px;
+  height: 35px;
 }
 
 .form-component.select {
+  border: 1px solid #8B8B8B;
+  border-radius: 5px;
+  padding: 5px 10px;
+  height: 35px;
+}
+
+.form-component.textarea {
   border: 1px solid #8B8B8B;
   border-radius: 5px;
   padding: 5px 10px;

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Solution</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/37e3c13129.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="/css/job.min.css">
+  <link rel="stylesheet" href="/css/company.min.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="left"><a href=""><img src="/img/logo/Logowhite-07.svg" alt=""></a></div>
+      <div class="right">
+        <ul class="menu">
+          <a href="">
+            <li><i class="far fa-building"></i> All employers</li>
+          </a>
+          <a href="">
+            <li><i class="fas fa-home"></i> About us</li>
+          </a>
+          <a href="">
+            <li><i class="fas fa-id-card"></i> Store resume</li>
+          </a>
+          <a href="">
+            <li><i class="fas fa-edit"></i> Register</li>
+          </a>
+          <a href="">
+            <li><i class="fas fa-sign-in-alt"></i> Log in</li>
+          </a>
+          <li class="account">
+            <i class="far fa-user"></i> My Account
+
+            <ul>
+              <a href=""><li><i class="far fa-newspaper"></i> My History</li></a>
+              <a href=""><li><i class="fas fa-sign-out-alt"></i> Log out</li></a>
+            </ul>
+          </li>
+
+          
+          <li><i class="fas fa-globe"></i> TH</li>
+        </ul>
+        <div class="company"><button class="form-component button">For company</button></div>
+        <div class="other">
+          <i class="fas fa-ellipsis-v" onclick="swip_menu(this)"></i>
+          <ul>
+            <a href=""><li><i class="far fa-newspaper"></i> Article</li></a>
+            <a href=""><li><i class="fas fa-mobile-alt"></i> Contact us</li></a>
+            <a href=""><li><i class="fas fa-gavel"></i> Terms of service</li></a>
+            <a href=""><li><i class="fas fa-fingerprint"></i> Privacy policy</li></a>
+            <a href=""><li><i class="fas fa-exclamation-triangle"></i> Disclaimer</li></a>
+          </ul>
+        </div>
+        <div class="lang">
+          <li><i class="fas fa-globe"></i> TH</li>
+          <li><i class="fas fa-globe"></i> EN</li>
+          <li><i class="fas fa-globe"></i> KH</li>
+        </div>
+      </div>
+
+      <div class="hamburger"><i class="fas fa-bars" onclick="open_mobile_navMenu()"></i></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page">
+      <div class="icon-aside" onclick="open_menu_aside()"><i class="fas fa-bars"></i></div>
+      <div class="aside">
+        <li><a href=""><i class="fas fa-edit"></i> ข้อมูลบริษัท</a></li>
+        <li><a href=""><i class="fas fa-edit"></i> ค้นหาประวัติ</a></li>
+        <li><a href=""><i class="fas fa-edit"></i> ใบสมัคร</a></li>
+        <li><a href=""><i class="fas fa-edit"></i> ประวัติที่สนใจ</a></li>
+        <li><a href=""><i class="fas fa-edit"></i> ประกาศงาน</a></li>
+        <li><a href=""><i class="fas fa-edit"></i> แจ้งผิดนัดสัมภาษณ์</a></li>
+        <li><a href=""><i class="fas fa-briefcase"></i> แพ็คเกจลงประกาศงาน/โฆษณา</a></li>
+      </div>
+
+      <div class="main-content">
+        <div class="head-title">
+          <h1>ประกาศงาน</h1>
+          <p>การประกาศงานของคุณจะยังไม่แสดง จนกว่าคุณจะชำระค่าแพ็คเกจ</p>
+        </div>
+
+        <div class="add-job-page">
+          <div class="button-head">
+            <button class="form-component button">สร้างแพ็คเกจใหม่เพื่อลงประกาศ</button>
+            <button class="form-component button">ชำระเงินทั้งหมด</button>
+          </div>
+
+          <div class="grid-list">
+            <div class="box-list">
+              <div class="head-list">
+                <div class="left">
+                  <div class="number">1</div>
+                  <div class="title-name">
+                    <p>แพ็คเกจลงประกาศงาน</p>
+                    <div class="name-packet">
+                      <span>2 ตำแหน่ง 2 เดือน</span>
+                      <span>เนื้องานที่เหลือ 1</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="button">
+                    <button class="form-component button">เพิ่มตำแหน่งงาน</button>
+                    <button class="form-component button">ชำระเงิน</button>
+                    <button class="form-component button delete">ลบ</button>
+                  </div>
+                </div>
+              </div>
+              <div class="body-list">
+                <div class="status">
+                  <p class="unpaid">ยังไม่ชำระค่าแพ็คเกจ</p>
+                </div>
+                <div class="list-table">
+                  <div class="list">
+                    <div class="td check-status">
+                      <p>สถานะ</p>
+                      <p class="pending">รอตรวจสอบ</p>
+                    </div>
+                    <div class="td edit">
+                      <p>แก้ไข</p>
+                      <p><i class="fas fa-edit"></i> กดเพื่อแก้ไข</p>
+                    </div>
+                    <div class="td preview">
+                      <p>แสดงตัวอย่าง</p>
+                      <p><i class="fas fa-eye"></i> กดเพื่อแสดงตัวอย่าง</p>
+                    </div>
+                    <div class="td">
+                      <p>ตำแหน่งงาน</p>
+                      <p>นักทำ SEO</p>
+                    </div>
+                    <div class="td">
+                      <p>อัตรา</p>
+                      <p>2</p>
+                    </div>
+                    <div class="td">
+                      <p>วันที่ลง</p>
+                      <p>12 ธ.ค. 63</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-list online">
+              <div class="head-list">
+                <div class="left">
+                  <div class="number">2</div>
+                  <div class="title-name">
+                    <p>แพ็คเกจลงประกาศงาน</p>
+                    <div class="name-packet">
+                      <span>3 ตำแหน่ง 3 เดือน</span>
+                      <span>เนื้องานที่เหลือ 0</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="body-list">
+                <div class="status">
+                  <p class="complete">ออนไลน์ 1 ต.ค. 63 - 31 ธ.ค. 63</p>
+                </div>
+                <div class="list-table">
+                  <div class="list">
+                    <div class="td check-status">
+                      <p>สถานะ</p>
+                      <div class="toggle-status">
+                        <div class="bb">
+                          <div class="circle"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="td edit">
+                      <p>แก้ไข</p>
+                      <p><i class="fas fa-edit"></i> กดเพื่อแก้ไข</p>
+                    </div>
+                    <div class="td preview">
+                      <p>แสดงตัวอย่าง</p>
+                      <p><i class="fas fa-eye"></i> กดเพื่อแสดงตัวอย่าง</p>
+                    </div>
+                    <div class="td">
+                      <p>ตำแหน่งงาน</p>
+                      <p>นักทำ SEO</p>
+                    </div>
+                    <div class="td">
+                      <p>อัตรา</p>
+                      <p>2</p>
+                    </div>
+                    <div class="td">
+                      <p>วันที่ลง</p>
+                      <p>12 ธ.ค. 63</p>
+                    </div>
+                  </div>
+
+                  <div class="list">
+                    <div class="td check-status">
+                      <p>สถานะ</p>
+                      <div class="toggle-status">
+                        <div class="bb">
+                          <div class="circle"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="td edit">
+                      <p>แก้ไข</p>
+                      <p><i class="fas fa-edit"></i> กดเพื่อแก้ไข</p>
+                    </div>
+                    <div class="td preview">
+                      <p>แสดงตัวอย่าง</p>
+                      <p><i class="fas fa-eye"></i> กดเพื่อแสดงตัวอย่าง</p>
+                    </div>
+                    <div class="td">
+                      <p>ตำแหน่งงาน</p>
+                      <p>นักทำ SEO</p>
+                    </div>
+                    <div class="td">
+                      <p>อัตรา</p>
+                      <p>2</p>
+                    </div>
+                    <div class="td">
+                      <p>วันที่ลง</p>
+                      <p>12 ธ.ค. 63</p>
+                    </div>
+                  </div>
+
+                  <div class="list">
+                    <div class="td check-status">
+                      <p>สถานะ</p>
+                      <div class="toggle-status">
+                        <div class="bb">
+                          <div class="circle"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="td edit">
+                      <p>แก้ไข</p>
+                      <p><i class="fas fa-edit"></i> กดเพื่อแก้ไข</p>
+                    </div>
+                    <div class="td preview">
+                      <p>แสดงตัวอย่าง</p>
+                      <p><i class="fas fa-eye"></i> กดเพื่อแสดงตัวอย่าง</p>
+                    </div>
+                    <div class="td">
+                      <p>ตำแหน่งงาน</p>
+                      <p>นักทำ SEO</p>
+                    </div>
+                    <div class="td">
+                      <p>อัตรา</p>
+                      <p>2</p>
+                    </div>
+                    <div class="td">
+                      <p>วันที่ลง</p>
+                      <p>12 ธ.ค. 63</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-list old">
+              <div class="head-list">
+                <div class="left">
+                  <div class="number">Old</div>
+                  <div class="title-name">
+                    <p>พื้นที่สำหรับงานเก่า</p>
+                    <div class="name-packet">
+                      <span>ตำแหน่งงานที่ถูกทิ้งไว้นานเกิน 6 เดือน จะถูกลบทิ้งอย่างถาวรโดยอัตโนมัติ</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="body-list">
+                <div class="box-old">
+                  <div class="head-old">
+                    <div class="packget">
+                      <p>แพ็คเกจลงประกาศงาน : 2 ตำแหน่ง 2 เดือน</p>
+                    </div>
+                    <div class="status">
+                      <div class="button"><button class="form-component button"><i class="fas fa-recycle"></i> นำกลับมาใช้</button></div>
+                      <div class="statusoffline">
+                        <p>ออฟไลน์วันที่ : 1 ก.ค. 63</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-table">
+                    <div class="list">
+                      <div class="td edit">
+                        <p>แก้ไข</p>
+                        <p><i class="fas fa-edit"></i> กดเพื่อแก้ไข</p>
+                      </div>
+                      <div class="td preview">
+                        <p>แสดงตัวอย่าง</p>
+                        <p><i class="fas fa-eye"></i> กดเพื่อแสดงตัวอย่าง</p>
+                      </div>
+                      <div class="td">
+                        <p>ตำแหน่งงาน</p>
+                        <p>นักทำ SEO</p>
+                      </div>
+                      <div class="td">
+                        <p>อัตรา</p>
+                        <p>2</p>
+                      </div>
+                      <div class="td">
+                        <p>วันที่ลง</p>
+                        <p>12 ธ.ค. 63</p>
+                      </div>
+                    </div>
+  
+                    <div class="list">
+                      <div class="td edit">
+                        <p>แก้ไข</p>
+                        <p><i class="fas fa-edit"></i> กดเพื่อแก้ไข</p>
+                      </div>
+                      <div class="td preview">
+                        <p>แสดงตัวอย่าง</p>
+                        <p><i class="fas fa-eye"></i> กดเพื่อแสดงตัวอย่าง</p>
+                      </div>
+                      <div class="td">
+                        <p>ตำแหน่งงาน</p>
+                        <p>นักทำ SEO</p>
+                      </div>
+                      <div class="td">
+                        <p>อัตรา</p>
+                        <p>2</p>
+                      </div>
+                      <div class="td">
+                        <p>วันที่ลง</p>
+                        <p>12 ธ.ค. 63</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="box-old">
+                  <div class="head-old">
+                    <div class="packget">
+                      <p>แพ็คเกจลงประกาศงาน : 1 ตำแหน่ง 1 เดือน</p>
+                    </div>
+                    <div class="status">
+                      <div class="button"><button class="form-component button"><i class="fas fa-recycle"></i> นำกลับมาใช้</button></div>
+                      <div class="statusoffline">
+                        <p>ออฟไลน์วันที่ : 1 ก.ค. 63</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-table">
+                    <div class="list">
+                      <div class="td edit">
+                        <p>แก้ไข</p>
+                        <p><i class="fas fa-edit"></i> กดเพื่อแก้ไข</p>
+                      </div>
+                      <div class="td preview">
+                        <p>แสดงตัวอย่าง</p>
+                        <p><i class="fas fa-eye"></i> กดเพื่อแสดงตัวอย่าง</p>
+                      </div>
+                      <div class="td">
+                        <p>ตำแหน่งงาน</p>
+                        <p>นักทำ SEO</p>
+                      </div>
+                      <div class="td">
+                        <p>อัตรา</p>
+                        <p>2</p>
+                      </div>
+                      <div class="td">
+                        <p>วันที่ลง</p>
+                        <p>12 ธ.ค. 63</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="footer">
+      <div class="logo">
+        <img src="/img/logo/Logowhite-07.svg" alt="">
+      </div>
+
+      <div class="about">
+        <h5>About Us</h5>
+        <div class="address">
+          <p>Wynnsoff Solution Co., Ltd. (Headquarters)</p>
+          <p>120/34-35 Village no.24, Meuang, Khonkaen 40000</p>
+          <p>Tax ID numbers 0123456789123</p>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h5>Contact</h5>
+        <p>Office hours : Monday - Saturday 08.30 am - 5.00 pm.</p>
+        <p>Advertising : wynnsoft20151@gmail.com</p>
+        <p>Phone number: 043-002-300, 062-909-1110 (Marketing)</p>
+      </div>
+
+      <div class="social">
+        <h5>Social Networks</h5>
+        <div class="list">
+          <a href=""><div class="facebook"><i class="fab fa-facebook-square"></i><span>Like us on Facebook</span></div></a>
+          <a href=""><div class="twitter"><i class="fab fa-twitter-square"></i><span>Follow us on Twitter</span></div></a>
+          <a href=""><div class="instagram"><i class="fab fa-instagram"></i><span>Follow us on Instagram</span></div></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="copyright-text">
+        <p>
+          CopyRight &copy; 2020 <a href="">Wynnsoff Solution Co., Ltd.</a>
+        </p>
+        <a href="">Terms of service</a>
+        <a href="">Privacy policy</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

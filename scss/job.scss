@@ -78,9 +78,17 @@ img{
     border: 1px solid $light-gray;
     border-radius: 5px;
     padding: 5px 10px;
+    height: 35px;
   }
 
   &.select{
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    height: 35px;
+  }
+
+  &.textarea{
     border: 1px solid $light-gray;
     border-radius: 5px;
     padding: 5px 10px;
