@@ -79,6 +79,10 @@ img{
     border-radius: 5px;
     padding: 5px 10px;
     height: 35px;
+
+    &.error{
+      border: 2px solid $red;
+    }
   }
 
   &.select{
@@ -118,7 +122,7 @@ img{
 // normal class
 //---------------------------------------------------------------------
 header{
-  background: url(/img/bg-head.png);
+  background: url(/front/img/bg-head.png);
   height: 50px;
   background-repeat: no-repeat;
   background-position: center;
@@ -294,6 +298,35 @@ main{
 
     .lang{
       display: none;
+      position: absolute;
+      top: 64%;
+      right: 22%;
+      background: $dark-blue;
+      z-index: 10;
+      padding: .5em 1em;
+      width: 60%;
+
+      @media screen and (min-width:$ipadpro){
+        top: 98%;
+        right: 14%;
+        width: unset;
+      }
+      @media screen and (min-width:$laptop){
+        right: 10%;
+      }
+      @media screen and (min-width:$pc){
+        right: 7%;
+      }
+
+      li{
+        color: $white;
+        cursor: pointer;
+        margin-bottom: .25em;
+      }
+
+      &.show{
+        display: block;
+      }
     }
   }
 
@@ -463,3 +496,67 @@ main{
     }
   }
 }
+
+
+//---------------------------------------------------------------------
+// loadding
+//---------------------------------------------------------------------
+.loadding{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 100;
+  display:none;
+  &.open{
+    display:block;
+    .well{
+      .progress-bar{
+        animation: progress 1.5s;
+      }
+    }
+  }
+  .well {
+    width: 100%;
+    margin: 50% auto auto auto;
+    @media(min-width: $tablet){
+      width: 60%;
+      margin: 35% auto auto auto;
+    }
+    @media(min-width: $ipadpro){
+      width: 40%;
+      margin: 25% auto auto auto;
+    }
+    @media(min-width: $laptop){
+      width: 30%;
+      margin: 19% auto auto auto;
+    }
+    background-repeat: repeat-x;
+    box-shadow: 0 0px 16px rgb(68, 68, 68);
+    overflow: hidden;
+    border-radius: 60px;
+    .progress-bar {
+      padding: 1em;
+      text-align: center;
+      color: rgba(255, 255, 255, 100);
+      background-image: linear-gradient(135deg, #26BDA6, #FF9F65, #DED37E);
+      // background: linear-gradient(to left, #27B1F8, #001764);
+      border-radius: 60px;
+      @keyframes progress {
+        from {
+            width: 0;
+            color: rgba(255, 255, 255, 0);
+        }
+        to {
+            width: 100%;
+            color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+}
+
+
+

@@ -31,7 +31,7 @@
   }
 
   .right-side{
-    background: url(/img/bg-02.jpg);
+    background: url(/front/img/bg-02.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0 0 10px 0;
@@ -62,6 +62,9 @@
 
         .input-box{
           margin-bottom: .5em;
+          .error{
+            font-size: 14px;
+          }
         }
 
         .button{
@@ -72,6 +75,9 @@
             padding: 10px;
             background: $dark-black;
             color: $white;
+            &:hover{
+              background: darken($dark-black, 5%);
+            }
           }
         }
       }

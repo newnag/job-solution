@@ -96,6 +96,10 @@ img {
   height: 35px;
 }
 
+.form-component.input.error {
+  border: 2px solid #FF0000;
+}
+
 .form-component.select {
   border: 1px solid #8B8B8B;
   border-radius: 5px;
@@ -134,7 +138,7 @@ img {
 }
 
 header {
-  background: url(/img/bg-head.png);
+  background: url(/front/img/bg-head.png);
   height: 50px;
   background-repeat: no-repeat;
   background-position: center;
@@ -354,6 +358,43 @@ main {
 
 .header .right .lang {
   display: none;
+  position: absolute;
+  top: 64%;
+  right: 22%;
+  background: #001764;
+  z-index: 10;
+  padding: .5em 1em;
+  width: 60%;
+}
+
+@media screen and (min-width: 1024px) {
+  .header .right .lang {
+    top: 98%;
+    right: 14%;
+    width: unset;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .right .lang {
+    right: 10%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .header .right .lang {
+    right: 7%;
+  }
+}
+
+.header .right .lang li {
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: .25em;
+}
+
+.header .right .lang.show {
+  display: block;
 }
 
 .header .hamburger {
@@ -577,5 +618,86 @@ main {
 
 .copyright .copyright-text > a:last-child {
   border: unset;
+}
+
+.loadding {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: none;
+}
+
+.loadding.open {
+  display: block;
+}
+
+.loadding.open .well .progress-bar {
+  -webkit-animation: progress 1.5s;
+          animation: progress 1.5s;
+}
+
+.loadding .well {
+  width: 100%;
+  margin: 50% auto auto auto;
+  background-repeat: repeat-x;
+  -webkit-box-shadow: 0 0px 16px #444444;
+          box-shadow: 0 0px 16px #444444;
+  overflow: hidden;
+  border-radius: 60px;
+}
+
+@media (min-width: 768px) {
+  .loadding .well {
+    width: 60%;
+    margin: 35% auto auto auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .loadding .well {
+    width: 40%;
+    margin: 25% auto auto auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .loadding .well {
+    width: 30%;
+    margin: 19% auto auto auto;
+  }
+}
+
+.loadding .well .progress-bar {
+  padding: 1em;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(135deg, #26BDA6, #FF9F65, #DED37E);
+  border-radius: 60px;
+}
+
+@-webkit-keyframes progress {
+  from {
+    width: 0;
+    color: rgba(255, 255, 255, 0);
+  }
+  to {
+    width: 100%;
+    color: white;
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+    color: rgba(255, 255, 255, 0);
+  }
+  to {
+    width: 100%;
+    color: white;
+  }
 }
 /*# sourceMappingURL=job.css.map */

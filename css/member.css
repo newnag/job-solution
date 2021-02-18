@@ -1,0 +1,940 @@
+.page {
+  max-width: 1364px;
+  margin: 3em auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 24% 68%;
+      grid-template-columns: 24% 68%;
+  grid-column-gap: 8%;
+}
+
+@media screen and (max-width: 767px) {
+  .page {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    max-width: 95%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page .icon-aside {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page .icon-aside {
+    position: fixed;
+    top: 9%;
+    right: 0;
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #8B8B8B;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .page .icon-aside.show {
+    right: 83%;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+}
+
+.page .aside {
+  background: url(/front/img/bg-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1em;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+@media screen and (max-width: 767px) {
+  .page .aside {
+    position: fixed;
+    top: 9%;
+    right: -100%;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .page .aside.show {
+    right: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+}
+
+.page .aside li {
+  margin: 1em 0;
+  color: #fff;
+}
+
+.page .aside li i {
+  margin-right: 5px;
+}
+
+.page .aside .personal {
+  cursor: pointer;
+}
+
+.page .aside .personal ul {
+  padding-left: 3em;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .page .aside .personal ul {
+    padding-left: 0;
+  }
+}
+
+.page .aside .personal ul li {
+  font-size: .9em;
+}
+
+.page .aside .personal ul li:before {
+  content: '-';
+  margin-right: 3px;
+}
+
+.page .main-content .head-title {
+  margin-bottom: 2em;
+}
+
+.page .main-content .head-title h1 {
+  color: #1468B2;
+}
+
+.page .main-content .info-page .picture {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  width: 30%;
+}
+
+@media screen and (max-width: 767px) {
+  .page .main-content .info-page .picture {
+    width: 100%;
+  }
+}
+
+.page .main-content .info-page .picture figure img {
+  width: 130px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.page .main-content .info-page .picture .detail p {
+  font-size: .7em;
+  margin-top: .5em;
+}
+
+.page .main-content .info-page .picture .detail button {
+  background: #1468B2;
+  color: #fff;
+}
+
+.page .main-content .info-page .detail-info {
+  margin: 1em 0;
+}
+
+.page .main-content .info-page .tig-public .public {
+  margin-bottom: 2em;
+}
+
+.page .main-content .info-page .tig-public p {
+  font-size: .9em;
+  color: #8B8B8B;
+}
+
+.page .main-content .info-page .button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 767px) {
+  .page .main-content .info-page .button-group {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.page .main-content .info-page .button-group button {
+  margin-right: 1em;
+  background: #1468B2;
+  color: #fff;
+  padding: .5em 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .page .main-content .info-page .button-group button {
+    font-size: .8em;
+    margin: unset;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .page .main-content .personal-page {
+    min-height: 867px;
+  }
+}
+
+.page .main-content .personal-page form {
+  width: 65%;
+}
+
+@media screen and (max-width: 767px) {
+  .page .main-content .personal-page form {
+    width: 100%;
+  }
+}
+
+.page .main-content .personal-page form .box-form {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px dashed;
+}
+
+.page .main-content .personal-page form .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .page .main-content .personal-page form .row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-row-gap: .5em;
+  }
+}
+
+.page .main-content .personal-page form .row .input-box {
+  margin-right: 1em;
+  width: 100%;
+}
+
+.page .main-content .personal-page form .row .input-box label {
+  color: #000;
+}
+
+.page .main-content .personal-page form .row .input-radio {
+  margin-right: .5em;
+}
+
+.page .main-content .personal-page form .row .insure label span {
+  color: #27B1F8;
+}
+
+@media screen and (max-width: 767px) {
+  .page .main-content .personal-page form .row.sex {
+    -ms-grid-columns: 30% 30%;
+        grid-template-columns: 30% 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page .main-content .personal-page form .row.weight {
+    -ms-grid-columns: 49% 49%;
+        grid-template-columns: 49% 49%;
+    grid-column-gap: 2%;
+  }
+  .page .main-content .personal-page form .row.weight .input-box:first-child {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page .main-content .personal-page form .row.religion {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 49% 49%;
+        grid-template-columns: 49% 49%;
+    grid-column-gap: 2%;
+  }
+}
+
+.page .main-content .personal-page form .row.year-his-job {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 47% 6% 47%;
+      grid-template-columns: 47% 6% 47%;
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 1199px) {
+  .page .main-content .personal-page form .row.year-his-job {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-row-gap: 1em;
+  }
+}
+
+.page .main-content .personal-page form .row.year-his-job .year-from, .page .main-content .personal-page form .row.year-his-job .year-to {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 49% 49%;
+      grid-template-columns: 49% 49%;
+  grid-column-gap: 2%;
+}
+
+.page .main-content .personal-page form .row.year-his-job .year-from .input-box label, .page .main-content .personal-page form .row.year-his-job .year-to .input-box label {
+  font-size: .8em;
+  margin-bottom: .25em;
+}
+
+@media screen and (max-width: 1199px) {
+  .page .main-content .personal-page form .row.year-his-job .year-from .input-box label, .page .main-content .personal-page form .row.year-his-job .year-to .input-box label {
+    font-size: 1em;
+  }
+}
+
+.page .main-content .personal-page form .row.year-his-job > span {
+  text-align: center;
+  color: #000;
+}
+
+.page .main-content .personal-page form .add-form {
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  color: #27B1F8;
+}
+
+.page .main-content .personal-page form .submit-button {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.page .main-content .personal-page form .submit-button button {
+  background: #1468B2;
+  color: #fff;
+  border: 1px solid #1468B2;
+  padding: .5em 1em;
+}
+
+@media (hover: hover) {
+  .page .main-content .personal-page form .submit-button button:hover {
+    background: inherit;
+    color: #1468B2;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+}
+
+.page .main-content .personal-page form .lang {
+  margin-bottom: 2em;
+}
+
+.page .main-content .personal-page form .lang .box {
+  margin-bottom: 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 49% 49%;
+      grid-template-columns: 49% 49%;
+  grid-column-gap: 2%;
+  grid-row-gap: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .page .main-content .personal-page form .lang .box {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.page .main-content .personal-page form .lang .box .input-box label {
+  color: #000;
+}
+
+.page .main-content .personal-page form .lang .add-lang {
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  color: #27B1F8;
+}
+
+.page .main-content .personal-page form .typing {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .page .main-content .personal-page form .typing {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.page .main-content .personal-page form .typing .row .input-box label {
+  color: #000;
+}
+
+.page .main-content .personal-page form .driving {
+  margin-bottom: .5em;
+}
+
+.page .main-content .personal-page form .driving label {
+  color: #000;
+}
+
+.page .main-content .personal-page form .driving .group-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: .5em;
+}
+
+.page .main-content .personal-page form .driving .group-check .checkbox {
+  margin-right: 1em;
+  margin-bottom: .5em;
+}
+
+.page .main-content .personal-page form .driving .group-check .checkbox label {
+  color: #707070;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .page .main-content .education {
+    min-height: 867px;
+  }
+}
+
+.page .main-content .education form {
+  width: 65%;
+}
+
+@media screen and (max-width: 767px) {
+  .page .main-content .education form {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .page .main-content .education form {
+    width: 75%;
+  }
+}
+
+.page .main-content .education form .box-form {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px dashed;
+}
+
+.page .main-content .education form .box-form .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .page .main-content .education form .box-form .row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-row-gap: .5em;
+  }
+}
+
+.page .main-content .education form .box-form .row .input-box {
+  margin-right: 1em;
+  width: 100%;
+}
+
+.page .main-content .education form .box-form .row .input-radio {
+  margin-right: .5em;
+}
+
+.page .main-content .education form .box-form .row .insure label span {
+  color: #27B1F8;
+}
+
+.page .main-content .education form .box-form .row.year-grade {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media screen and (max-width: 1023px) {
+  .page .main-content .education form .box-form .row.year-grade {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 49% 49%;
+        grid-template-columns: 49% 49%;
+    grid-column-gap: 2%;
+    grid-row-gap: 10px;
+  }
+}
+
+.page .main-content .education form .box-form .row.year-grade .year, .page .main-content .education form .box-form .row.year-grade .grade {
+  width: 150px;
+}
+
+.page .main-content .education form .box-form .row.year-grade .year select, .page .main-content .education form .box-form .row.year-grade .grade select {
+  width: 150px;
+}
+
+.page .main-content .education form .box-form .row.year-grade .edu {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page .main-content .education form .box-form .row.year-grade .edu label {
+  margin-left: 5px;
+}
+
+.page .main-content .education form .add-form {
+  cursor: pointer;
+  width: 160px;
+  margin: auto;
+  color: #27B1F8;
+}
+
+.page .main-content .education form .submit-button {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.page .main-content .education form .submit-button button {
+  background: #1468B2;
+  color: #fff;
+  border: 1px solid #1468B2;
+  padding: .5em 1em;
+}
+
+@media (hover: hover) {
+  .page .main-content .education form .submit-button button:hover {
+    background: inherit;
+    color: #1468B2;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page .main-content .upload-page {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page .main-content .upload-page {
+    width: 60%;
+    min-height: 870px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page .main-content .upload-page {
+    width: 50%;
+    min-height: 460px;
+  }
+}
+
+.page .main-content .upload-page .title {
+  color: #000;
+  font-size: 1.2em;
+}
+
+.page .main-content .upload-page .upload {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 46%;
+      grid-template-columns: 40% 46%;
+  grid-column-gap: 4%;
+  margin-top: 1em;
+}
+
+.page .main-content .upload-page .upload .mock-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page .main-content .upload-page .upload .mock-img img {
+  width: 100%;
+  height: 160px;
+  border: 1px solid #8B8B8B;
+  border-radius: 3px;
+}
+
+.page .main-content .upload-page .upload .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page .main-content .upload-page .upload .button button {
+  background: #1468B2;
+  color: #fff;
+  margin-bottom: 1em;
+  width: 100px;
+}
+
+.page .main-content .upload-page .upload .button .change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.page .main-content .upload-page .upload .button .change p {
+  color: #e0ac1a;
+  cursor: pointer;
+}
+
+.page .main-content .myjob .select-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.page .main-content .myjob .select-page .box {
+  background: #707070;
+  color: #fff;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  padding: 4px 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page .main-content .myjob .select-page .box span {
+  color: #eec50d;
+}
+
+.page .main-content .myjob .select-page .box.active {
+  background: #1468B2;
+}
+
+.page .main-content .myjob .select-delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+}
+
+@media screen and (min-width: 1024px) {
+  .page .main-content .myjob .select-delete {
+    width: 50%;
+  }
+}
+
+.page .main-content .myjob .select-delete .delete button {
+  background: #eec50d;
+  color: #fff;
+}
+
+.page .main-content .myjob .job-table .grid-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  grid-row-gap: 1em;
+  margin: 2em 0;
+}
+
+.page .main-content .myjob .job-table .grid-box .list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px 1fr;
+      grid-template-columns: 20px 1fr;
+}
+
+@media screen and (min-width: 768px) {
+  .page .main-content .myjob .job-table .grid-box .list {
+    -ms-grid-columns: 30px 1fr;
+        grid-template-columns: 30px 1fr;
+  }
+}
+
+.page .main-content .myjob .job-table .grid-box .list .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page .main-content .myjob .job-table .grid-box .list .box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+}
+
+@media screen and (max-width: 1199px) {
+  .page .main-content .myjob .job-table .grid-box .list .box {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 10px;
+    height: 160px;
+  }
+}
+
+.page .main-content .myjob .job-table .grid-box .list .box figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page .main-content .myjob .job-table .grid-box .list .box figure img {
+  height: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .page .main-content .myjob .job-table .grid-box .list .box figure img {
+    height: 115px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page .main-content .myjob .job-table .grid-box .list .box figure img {
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page .main-content .myjob .job-table .grid-box .list .box figure img {
+    height: 130px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+.page .main-content .myjob .job-table .grid-box .list .box .detail {
+  margin-left: .5em;
+}
+
+.page .main-content .myjob .job-table .grid-box .list .box .detail .name h4 {
+  color: #27B1F8;
+  font-weight: lighter;
+  height: 1.6em;
+  overflow-y: hidden;
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 1200px) {
+  .page .main-content .myjob .job-table .grid-box .list .box .detail .name h4 {
+    font-size: 1.4em;
+  }
+}
+
+.page .main-content .myjob .job-table .grid-box .list .box .detail .company {
+  font-size: .8em;
+}
+
+.page .main-content .myjob .job-table .grid-box .list .box .detail .address {
+  font-size: .8em;
+}
+
+.page .main-content .myjob .job-table .grid-box .list .box .detail .address i {
+  margin-right: 5px;
+}
+
+.page .main-content .myjob .job-table .grid-box .list .box .detail .salary i {
+  margin-right: 5px;
+}
+
+.page .main-content .myjob .job-table .grid-box .list .box .detail .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1199px) {
+  .page .main-content .myjob .job-table .grid-box .list .box .detail .tag .type, .page .main-content .myjob .job-table .grid-box .list .box .detail .tag .assis, .page .main-content .myjob .job-table .grid-box .list .box .detail .tag .wfh, .page .main-content .myjob .job-table .grid-box .list .box .detail .tag .urgent {
+    font-size: 0.6em !important;
+    margin-bottom: 5px !important;
+  }
+}
+
+.page .main-content .myjob .job-table .grid-box .list .box .detail .tag .type {
+  color: #2EC800;
+  border: 1px solid #2EC800;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: .8em;
+  margin-right: .25em;
+}
+
+.page .main-content .myjob .job-table .grid-box .list .box .detail .tag .assis, .page .main-content .myjob .job-table .grid-box .list .box .detail .tag .wfh {
+  color: #27B1F8;
+  border: 1px solid #27B1F8;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: .8em;
+  margin: 0 .25em;
+}
+
+.page .main-content .myjob .job-table .grid-box .list .box .detail .tag .urgent {
+  color: #fff;
+  background: #FF0000;
+  border: 1px solid #FF0000;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: .8em;
+  margin-left: .25em;
+}
+
+.page .main-content .myjob .job-apply {
+  display: none;
+}
+
+.page .main-content .myjob .company-seeprofile, .page .main-content .myjob .company-follow {
+  margin: 2em 0;
+}
+
+.page .main-content .myjob .company-seeprofile table, .page .main-content .myjob .company-follow table {
+  width: 100%;
+  border: 1px solid #8B8B8B;
+  border-collapse: collapse;
+}
+
+.page .main-content .myjob .company-seeprofile table thead th, .page .main-content .myjob .company-follow table thead th {
+  border: 1px solid #8B8B8B;
+  border-collapse: collapse;
+}
+
+.page .main-content .myjob .company-seeprofile table tbody tr:nth-child(even), .page .main-content .myjob .company-follow table tbody tr:nth-child(even) {
+  background: #e6e6e6;
+}
+
+.page .main-content .myjob .company-seeprofile table tbody td, .page .main-content .myjob .company-follow table tbody td {
+  border: 1px solid #8B8B8B;
+  border-collapse: collapse;
+  padding: 3px;
+}
+
+.page .main-content .myjob .company-seeprofile table tbody td:nth-child(2), .page .main-content .myjob .company-seeprofile table tbody td:nth-child(3), .page .main-content .myjob .company-follow table tbody td:nth-child(2), .page .main-content .myjob .company-follow table tbody td:nth-child(3) {
+  text-align: center;
+}
+
+.page .main-content .myjob .company-seeprofile {
+  display: none;
+}
+
+.page .main-content .myjob .company-follow {
+  display: none;
+}
+
+.page .main-content .myjob .company-follow table {
+  table-layout: fixed;
+}
+
+.page .main-content .myjob .company-follow table thead tr th:nth-child(1) {
+  width: 15%;
+}
+
+@media screen and (min-width: 768px) {
+  .page .main-content .myjob .company-follow table thead tr th:nth-child(1) {
+    width: 10%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page .main-content .myjob .company-follow table thead tr th:nth-child(1) {
+    width: 8%;
+  }
+}
+
+.page .main-content .myjob .company-follow table thead tr th:nth-child(3) {
+  width: 30%;
+}
+
+@media screen and (min-width: 768px) {
+  .page .main-content .myjob .company-follow table thead tr th:nth-child(3) {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page .main-content .myjob .company-follow table thead tr th:nth-child(3) {
+    width: 20%;
+  }
+}
+
+.page .main-content .myjob .company-follow table tbody tr td:nth-child(2) {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.page .main-content .myjob .company-follow table tbody tr .action span {
+  font-size: .7em;
+  margin-bottom: .25em;
+  cursor: pointer;
+  margin: 0 1em;
+}
+
+.page .main-content .myjob .company-follow table tbody tr .action span:nth-child(1) {
+  color: #2EC800;
+}
+
+.page .main-content .myjob .company-follow table tbody tr .action span:nth-child(2) {
+  color: #eec50d;
+}
+/*# sourceMappingURL=member.css.map */

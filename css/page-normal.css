@@ -323,7 +323,7 @@
 
 .job-normal .logo-company {
   position: unset;
-  background: url(/img/bg-02.jpg);
+  background: url(/front/img/bg-02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -515,7 +515,7 @@
 
 @media screen and (min-width: 1024px) {
   .search-job .search-box {
-    background: url(/img/bg-01.png);
+    background: url(/front/img/bg-01.png);
     background-repeat: no-repeat;
     background-size: cover;
   }

@@ -1,0 +1,806 @@
+@import 'variable';
+
+.page{
+  max-width: 1364px;
+  margin: 3em auto;
+  display: grid;
+  grid-template-columns: 24% 68%;
+  grid-column-gap: 8%;
+
+  @media screen and (max-width:($tablet)-1px){
+    grid-template-columns: 100%;
+    max-width: 95%;
+  }
+
+  .icon-aside{
+    @media screen and (min-width:$tablet){
+      display: none;
+    }
+
+    @media screen and (max-width:($tablet)-1px){
+      position: fixed;
+      top: 9%;
+      right: 0;
+      background: $white;
+      padding: 5px;
+      border: 1px solid $light-gray;
+      border-right: none;
+      border-radius: 5px 0 0 5px;
+      cursor: pointer;
+      display: flex;
+      transition: .3s;
+
+      &.show{
+        right: 83%;
+        transition: .3s;
+      }
+    }
+  }
+
+  .aside{
+    @media screen and (max-width:($tablet)-1px){
+      position: fixed;
+      top: 9%;
+      right: -100%;
+      transition: .3s;
+
+      &.show{
+        right: 0;
+        transition: .3s;
+      }
+    }
+
+    background: url(/front/img/bg-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em;
+    height: max-content;
+    
+
+    li{
+      margin: 1em 0;
+      color: $white;
+
+      i{
+        margin-right: 5px;
+      }
+    }
+    .personal{
+      cursor: pointer;
+
+      ul{
+        padding-left: 3em;
+
+        @media screen and (min-width:$tablet) and (max-width:($ipadpro)-1px){
+          padding-left: 0;
+        }
+
+        li{
+          font-size: .9em;
+
+          &:before{
+            content: '-';
+            margin-right: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  .main-content{
+    .head-title{
+      margin-bottom: 2em;
+
+      h1{
+        color: $blue;
+      }
+    }
+
+    .info-page{
+      .picture{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 30%;
+
+        @media screen and (max-width:($tablet)-1px){
+          width: 100%;
+        }
+
+        figure{
+          img{
+            width: 130px;
+            height: 150px;
+            object-fit: cover;
+          }
+        }
+
+        .detail{
+          p{
+            font-size: .7em;
+            margin-top: .5em;
+          }
+
+          button{
+            background: $blue;
+            color: $white;
+          }
+        }
+      }
+
+      .detail-info{
+        margin: 1em 0;
+      }
+
+      .tig-public{
+        .public{
+          margin-bottom: 2em;
+        }
+        p{
+          font-size: .9em;
+          color: $light-gray;
+        }
+      }
+
+      .button-group{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 2em;
+
+        @media screen and (max-width:($tablet)-1px){
+          justify-content: space-between;
+        }
+
+        button{
+          margin-right: 1em;
+          background: $blue;
+          color: $white;
+          padding: .5em 1em;
+
+          @media screen and (max-width:($tablet)-1px){
+            font-size: .8em;
+            margin: unset;
+          }
+        }
+      }
+    }
+
+    .personal-page{
+      @media screen and (min-width: $ipadpro) and (max-width:($laptop)-1px) {
+        min-height: 867px;
+      }
+
+      form{
+        width: 65%;
+
+        @media screen and (max-width:($tablet)-1px){
+          width: 100%;
+        }
+
+        .box-form{
+          margin-bottom: 2em;
+          padding-bottom: 2em;
+          border-bottom: 1px dashed;
+        }
+
+        .row{
+          display: flex;
+          align-items: center;
+          margin-bottom: 1em;
+
+          @media screen and (max-width:($tablet)-1px){
+            display: grid;
+            grid-template-columns: 100%;
+            grid-row-gap: .5em;
+          }
+
+          .input-box{
+            margin-right: 1em;
+            width: 100%;
+
+            label{
+              color: $black;
+            }
+          }
+          .input-radio{
+            margin-right: .5em; 
+          }
+          .insure{
+            label{
+              span{
+                color: $sky;
+              }
+            }
+          }
+
+          &.sex{
+            @media screen and (max-width:($tablet)-1px){
+              grid-template-columns: 30% 30%;
+            }
+          }
+
+          &.weight{
+            @media screen and (max-width:($tablet)-1px){
+              grid-template-columns: 49% 49%;
+              grid-column-gap: 2%;
+  
+              .input-box:first-child{
+                grid-column: 1/3;
+              }
+            }
+          }
+
+          &.religion{
+            @media screen and (max-width:($tablet)-1px){
+              display: grid;
+              grid-template-columns: 49% 49%;
+              grid-column-gap: 2%;
+            }
+          }
+
+          &.year-his-job{
+            display: grid;
+            grid-template-columns: 47% 6% 47%;
+            margin-right: 1em;
+
+            @media screen and (max-width:($laptop)-1px){
+              grid-template-columns: 100%;
+              grid-row-gap: 1em;
+            }
+
+            .year-from,.year-to{
+              display: grid;
+              grid-template-columns: 49% 49%;
+              grid-column-gap: 2%;
+
+              .input-box{
+                label{
+                  font-size: .8em;
+                  margin-bottom: .25em;
+
+                  @media screen and (max-width:($laptop)-1px){
+                    font-size: 1em;
+                  }
+                }
+              }
+            }
+
+            >span{
+              text-align: center;
+              color: $black;
+            }
+          }
+        }
+
+        .add-form{
+          cursor: pointer;
+          width: max-content;
+          margin: auto;
+          color: $sky;
+        }
+
+        .submit-button{
+          margin: 1em 0;
+          text-align: center;
+
+          button{
+            background: $blue;
+            color: $white;
+            border: 1px solid $blue;
+            padding: .5em 1em;
+
+            @media (hover:hover){
+              &:hover{
+                background: inherit;
+                color: $blue;
+                transition: .3s;
+              }
+            }
+          }
+        }
+
+        .lang{
+          margin-bottom: 2em;
+          .box{
+            margin-bottom: 2em;
+            display: grid;
+            grid-template-columns: 49% 49%;
+            grid-column-gap: 2%;
+            grid-row-gap: 1em;
+
+            @media screen and (min-width:$ipadpro){
+              grid-template-columns: repeat(4,1fr);
+            }
+
+            .input-box{
+              label{
+                color: $black;
+              }
+            }
+          }
+
+          .add-lang{
+            cursor: pointer;
+            width: max-content;
+            margin: auto;
+            color: $sky;
+          }
+        }
+
+        .typing{
+          display: grid;
+          grid-template-columns: 100%;
+
+          @media screen and (min-width:$ipadpro){
+            grid-template-columns: repeat(2,1fr);
+          }
+
+          .row{
+            .input-box{
+              label{
+                color: $black;
+              }
+            }
+          }
+        }
+        
+        .driving{
+          margin-bottom: .5em;
+
+          label{
+            color: $black;
+          }
+
+          .group-check{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: .5em;
+
+            .checkbox{
+              margin-right: 1em;
+              margin-bottom: .5em;
+
+              label{
+                color: $dark-gray;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .education{
+      @media screen and (min-width: $ipadpro) and (max-width:($laptop)-1px) {
+        min-height: 867px;
+      }
+
+      form{
+        width: 65%;
+
+        @media screen and (max-width:($tablet)-1px){
+          width: 100%;
+        }
+        @media screen and (min-width:$ipadpro) and (max-width:($laptop)-1px){
+          width: 75%;
+        }
+
+        .box-form{
+          margin-bottom: 2em;
+          padding-bottom: 2em;
+          border-bottom: 1px dashed;
+
+          .row{
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+  
+            @media screen and (max-width:($tablet)-1px){
+              display: grid;
+              grid-template-columns: 100%;
+              grid-row-gap: .5em;
+            }
+  
+            .input-box{
+              margin-right: 1em;
+              width: 100%;
+            }
+            .input-radio{
+              margin-right: .5em; 
+            }
+            .insure{
+              label{
+                span{
+                  color: $sky;
+                }
+              }
+            }
+
+            &.year-grade{
+              @media screen and (max-width:($ipadpro)-1px){
+                display: grid;
+                grid-template-columns: 49% 49%;
+                grid-column-gap: 2%;
+                grid-row-gap: 10px;
+              }
+
+              align-items: flex-end;
+
+              .year,.grade{
+                width: 150px;
+
+                select{
+                  width: 150px;
+                }
+              }
+
+              .edu{
+                flex-direction: row;
+                align-items: center;
+
+                label{
+                  margin-left: 5px;
+                }
+              }
+            }
+          }
+        }
+
+        .add-form{
+          cursor: pointer;
+          width: 160px;
+          margin: auto;
+          color: $sky;
+        }
+
+        .submit-button{
+          margin: 1em 0;
+          text-align: center;
+
+          button{
+            background: $blue;
+            color: $white;
+            border: 1px solid $blue;
+            padding: .5em 1em;
+
+            @media (hover:hover){
+              &:hover{
+                background: inherit;
+                color: $blue;
+                transition: .3s;
+              }
+            }
+          }
+        }
+        
+      }
+    }
+
+    .upload-page{
+      @media screen and (min-width:$tablet){
+        width: 80%;
+      }
+      @media screen and (min-width:$ipadpro){
+        width: 60%;
+        min-height: 870px;
+      }
+      @media screen and (min-width:$laptop){
+        width: 50%;
+        min-height: 460px;
+      }
+
+      .title{
+        color: $black;
+        font-size: 1.2em;
+      }
+
+      .upload{
+        display: grid;
+        grid-template-columns: 40% 46%;
+        grid-column-gap: 4%;
+        margin-top: 1em;
+
+        .mock-img{
+          display: flex;
+
+          img{
+            width: 100%;
+            height: 160px;
+            border: 1px solid $light-gray;
+            border-radius: 3px;
+          }
+        }
+
+        .button{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          button{
+            background: $blue;
+            color: $white;
+            margin-bottom: 1em;
+            width: 100px;
+          }
+          
+          .change{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            p{
+              color: #e0ac1a;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .myjob{
+      .select-page{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2em;
+
+        .box{
+          background: $dark-gray;
+          color: $white;
+          margin-right: 10px;
+          margin-bottom: 5px;
+          padding: 4px 7px;
+          border-radius: 5px;
+          cursor: pointer;
+
+          span{
+            color: $gold;
+          }
+
+          &.active{
+            background: $blue;
+          }
+        }
+      }
+
+      .select-delete{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+
+        @media screen and (min-width:$ipadpro){
+          width: 50%;
+        }
+
+        .delete{
+          button{
+            background: $gold;
+            color: $white;
+          }
+        }
+      }
+
+      .job-table{
+        .grid-box{
+          display: grid;
+          grid-template-columns: 100%;
+          grid-row-gap: 1em;
+          margin: 2em 0;
+
+          .list{
+            display: grid;
+            grid-template-columns: 20px 1fr;
+
+            @media screen and (min-width:($tablet)){
+              grid-template-columns: 30px 1fr;
+            }
+
+            .check{
+              display: flex;
+            }
+
+            .box{
+              display: grid;
+              grid-template-columns: 20% 80%;
+        
+              @media screen and (max-width:($laptop)-1px){
+                border-bottom: 1px solid $dark-gray;
+                padding-bottom: 10px;
+                height: 160px;
+              }
+        
+              figure{
+                display: flex;
+  
+                img{
+                  height: 70px;
+
+                  @media screen and (min-width:($tablet)){
+                    height: 115px;
+                  }
+                  @media screen and (min-width:($ipadpro)){
+                    height: 120px;
+                  }
+                  @media screen and (min-width:($laptop)){
+                    height: 130px;
+                    object-fit: contain;
+                  }
+                }
+              }
+        
+              .detail{
+                margin-left: .5em;
+        
+                .name{
+                  h4{
+                    color: $sky;
+                    font-weight: lighter;
+                    height: 1.6em;
+                    overflow-y: hidden;
+                    font-size: 1.2em;
+        
+                    @media screen and (min-width:$laptop){
+                      font-size: 1.4em;
+                    }
+                  }
+                }
+                .company{
+                  font-size: .8em;
+                }
+                .address{
+                  font-size: .8em;
+        
+                  i{
+                    margin-right: 5px;
+                  }
+                }
+                .salary{
+                  i{
+                    margin-right: 5px;
+                  }
+                }
+                .tag{
+                  display: flex;
+                  flex-wrap: wrap;
+        
+                  @media screen and (max-width:($laptop)-1px){
+                    .type,.assis,.wfh,.urgent{
+                      font-size: .6em!important;
+                      margin-bottom: 5px!important;
+                    }
+                  }
+        
+                  .type{
+                    color: $green;
+                    border: 1px solid $green;
+                    border-radius: 5px;
+                    padding: 3px;
+                    font-size: .8em;
+                    margin-right: .25em;
+                  }
+                  .assis,.wfh{
+                    color: $sky;
+                    border: 1px solid $sky;
+                    border-radius: 5px;
+                    padding: 3px;
+                    font-size: .8em;
+                    margin: 0 .25em;
+                  }
+                  .urgent{
+                    color: $white;
+                    background: $red;
+                    border: 1px solid $red;
+                    border-radius: 5px;
+                    padding: 3px;
+                    font-size: .8em;
+                    margin-left: .25em;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .job-apply{
+        display: none;
+      }
+      .company-seeprofile,.company-follow{
+        margin: 2em 0;
+
+        table{
+          width: 100%;
+          border: 1px solid $light-gray;
+          border-collapse: collapse;
+
+          thead{
+            th{
+              border: 1px solid $light-gray;
+              border-collapse: collapse;
+            }
+          }
+
+          tbody{
+            tr{
+              &:nth-child(even){
+                background: #e6e6e6;
+              }
+            }
+            td{
+              border: 1px solid $light-gray;
+              border-collapse: collapse;
+              padding: 3px;
+
+              &:nth-child(2),
+              &:nth-child(3){
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+      .company-seeprofile{
+        display: none;
+      }
+      .company-follow{
+        display: none;
+        table{
+          table-layout: fixed;
+
+          thead{
+            tr{
+              th{
+                &:nth-child(1){
+                  width: 15%;
+
+                  @media screen and (min-width:$tablet){
+                    width: 10%;
+                  }
+                  @media screen and (min-width:$laptop){
+                    width: 8%;
+                  }
+                }
+                &:nth-child(3){
+                  width: 30%;
+
+                  @media screen and (min-width:$tablet){
+                    width: 35%;
+                  }
+                  @media screen and (min-width:$laptop){
+                    width: 20%;
+                  }
+                }
+              }
+            }
+          }
+
+          tbody{
+            tr{
+              td{
+                &:nth-child(2){
+                  text-align: left;
+                  padding-left: 15px;
+                }
+              }
+
+              .action{
+
+                span{
+                  font-size: .7em;
+                  margin-bottom: .25em;
+                  cursor: pointer;
+                  margin: 0 1em;
+
+                  &:nth-child(1){
+                    color: $green;
+                  }
+                  &:nth-child(2){
+                    color: $gold;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

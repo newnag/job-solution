@@ -11,3 +11,7 @@ function open_menu_aside(){
   document.querySelector('.aside').classList.toggle('show')
   document.querySelector('.icon-aside').classList.toggle('show')
 }
+
+function open_lang(){
+  document.querySelector('.right .lang').classList.toggle('show')
+}

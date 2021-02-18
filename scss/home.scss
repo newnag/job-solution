@@ -226,6 +226,33 @@
     grid-template-columns: 100%;
     grid-row-gap: 1em;
     margin: 2em 0;
+    position: relative;
+    &.loadding{
+      padding: 10px;
+      &:before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color:rgba(0,0,0,0.3);
+        width: 100%;
+        height: 100%;
+        content : '';
+        z-index: 100;
+        border-radius: 5px;
+      }
+      &:after{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content : 'Loadding ...';
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        z-index: 105;
+      }
+    }
 
     @media screen and (min-width:$tablet){
       grid-template-columns: repeat(2,1fr);
@@ -345,7 +372,7 @@
   }
   
   @media screen and (min-width:$ipadpro){
-    background: url(/img/bg-01.png);
+    background: url(/front/img/bg-01.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -440,7 +467,8 @@
 
 .grid-job{
   margin: 3em auto;
-
+  position: relative;
+  
   @media screen and (min-width:$ipadpro){
     max-width: 1346px;
   }
@@ -527,6 +555,33 @@
     grid-template-columns: 100%;
     grid-row-gap: 1em;
     margin: 2em 0;
+    position: relative;
+    &.loadding{
+      padding: 10px;
+      &:before{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background-color:rgba(0,0,0,0.3);
+        width: 100%;
+        height: 100%;
+        content : '';
+        z-index: 100;
+        border-radius: 5px;
+      }
+      &:after{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content : 'Loadding ...';
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        z-index: 105;
+      }
+    }
 
     @media screen and (min-width:$tablet){
       grid-template-columns: repeat(2,1fr);
@@ -647,7 +702,7 @@
   }
   
   @media screen and (min-width:$ipadpro){
-    background: url(/img/bg-01.png);
+    background: url(/front/img/bg-01.png);
     background-repeat: no-repeat;
     padding: 1em;
     margin-bottom: 1em;

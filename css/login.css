@@ -43,7 +43,7 @@
 }
 
 .login-box .right-side, .register-box .right-side {
-  background: url(/img/bg-02.jpg);
+  background: url(/front/img/bg-02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0 0 10px 0;
@@ -92,6 +92,10 @@
   margin-bottom: .5em;
 }
 
+.login-box .right-side .login-zone .input-login .input-box .error, .register-box .right-side .login-zone .input-login .input-box .error {
+  font-size: 14px;
+}
+
 .login-box .right-side .login-zone .input-login .button, .register-box .right-side .login-zone .input-login .button {
   margin-top: 1em;
   text-align: center;
@@ -101,6 +105,10 @@
   padding: 10px;
   background: #3D3D3D;
   color: #fff;
+}
+
+.login-box .right-side .login-zone .input-login .button button:hover, .register-box .right-side .login-zone .input-login .button button:hover {
+  background: #303030;
 }
 
 .login-box .right-side .login-zone .forget, .register-box .right-side .login-zone .forget {
